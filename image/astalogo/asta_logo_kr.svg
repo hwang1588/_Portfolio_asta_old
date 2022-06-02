@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="145.254" height="38.065" viewBox="0 0 145.254 38.065">
+  <g id="ASTAlogo_kor" transform="translate(-191.1 -506.3)">
+    <g id="Group_1" data-name="Group 1" transform="translate(191.1 506.3)">
+      <path id="Path_1" data-name="Path 1" d="M191.2,536.707a.44.44,0,0,0,.011.118V536.6C191.211,536.643,191.2,536.675,191.2,536.707Z" transform="translate(-191.189 -533.357)" fill="#fff"/>
+      <path id="Path_2" data-name="Path 2" d="M226.525,509.65v-.064a3.333,3.333,0,0,0-3.318-3.275H211.553L223,534.533h-2.4l-9.151-22.165h-5.234l-6.807,16.61h-2.4l7.791-18.9h5.769l-1.53-3.767H194.632c-.064,0-.128-.011-.193-.011s-.128.011-.193.011a3.337,3.337,0,0,0-3.147,3.221v.225l.032,21.683a5.683,5.683,0,0,0,2.2,4.805l.589.342,1.712-4.345h6.1l1.852-4.356h3.382l-1.637-4.249,3.489-8.6,8.112,19.5h-2.451l-5.608-13.507-1.092,2.611,2.558,6.539H205l-1.8,4.409h-5.993l-1.316,3.146.567.332L206.5,543.78a4.458,4.458,0,0,0,4.431,0l13.742-7.909c1.894-1.06,1.819-4.388,1.819-4.388l.021-21.758A.182.182,0,0,0,226.525,509.65Z" transform="translate(-191.1 -506.3)" fill="#fff"/>
+    </g>
+    <g id="Group_2" data-name="Group 2" transform="translate(237.057 508.226)">
+      <path id="Path_3" data-name="Path 3" d="M631,529.7a10.5,10.5,0,1,0,10.5,10.5A10.51,10.51,0,0,0,631,529.7Zm0,16.942a6.475,6.475,0,1,1,6.432-6.518A6.5,6.5,0,0,1,631,546.642Z" transform="translate(-620.5 -529.122)" fill="#fff"/>
+      <path id="Path_4" data-name="Path 4" d="M1479.809,524.3v4.056h-4.142V550.7H1471.6V524.3Z" transform="translate(-1380.511 -524.3)" fill="#fff"/>
+      <path id="Path_5" data-name="Path 5" d="M869.8,524.3v4.056h-4.142V550.7H861.6V524.3Z" transform="translate(-835.796 -524.3)" fill="#fff"/>
+      <rect id="Rectangle_1" data-name="Rectangle 1" width="17.777" height="4.11" transform="translate(68.913 11.206)" fill="#fff"/>
+      <rect id="Rectangle_2" data-name="Rectangle 2" width="17.777" height="4.11" transform="translate(68.913 22.293)" fill="#fff"/>
+      <rect id="Rectangle_3" data-name="Rectangle 3" width="17.777" height="4.11" transform="translate(68.913 0)" fill="#fff"/>
+      <rect id="Rectangle_4" data-name="Rectangle 4" width="28.148" height="4.11" transform="translate(35.875 22.293)" fill="#fff"/>
+      <path id="Path_6" data-name="Path 6" d="M969.8,529.919l9.129,9.7h4.923L969.8,524.3l-14.1,15.315h4.934Z" transform="translate(-919.825 -524.3)" fill="#fff"/>
+    </g>
+  </g>
+</svg>

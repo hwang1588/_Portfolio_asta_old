@@ -1,0 +1,1016 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous" />
+    <!-- Favicons -->
+    <link href="./image/favicon.png" rel="icon">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
+    <title>Astaplatform</title>
+    <script>
+        $(function() {
+            if (isPC()) {
+                $('#theAstaQR').show();
+                $('#astaWalletQR').show();
+            } else {
+                $('#theAstaDown').show();
+                $('#astaWalletDown').show();
+            }
+        });
+
+        function isPC() {
+            var ua = navigator.userAgent.toUpperCase();
+            return !ua.match(/(PHONE|PAD|POD|IPHONE|IPOD|IOS|IPAD|ANDROID|MOBILE|BLACKBERRY|IEMOBILE|MQQBROWSER|JUC|FENNEC|WOSBROWSER|BROWSERNG|WEBOS|SYMBIAN|WINDOWS PHONE)/i);
+        }
+    </script>
+    <script>
+        
+        $(document).ready(function(){
+            $('.m2').click(function(){
+                var offset = $(".about").offset();
+                $('html, body').animate({ scrollTop: offset.top - 100 }, 500);
+            }); 
+            $('.m3').click(function () {
+                var offset = $(".feature").offset();
+                $('html, body').animate({ scrollTop: offset.top - 400 }, 500);
+            });
+            $('.m4').click(function () {
+                var offset = $(".astatour-bg").offset();
+                $('html, body').animate({ scrollTop: offset.top - 150 }, 500);
+            });
+            $('.m5').click(function () {
+                var offset = $(".history").offset();
+                $('html, body').animate({ scrollTop: offset.top - 70 }, 500);
+            });
+            $('.m6').click(function () {
+                var offset = $(".team").offset();
+                $('html, body').animate({ scrollTop: offset.top - 70 }, 500);
+            })
+            if (matchMedia('screen and (min-width: 768px)').matches) {
+                $('.nav-content li').click(function(){
+                    $('.nav-content').toggleClass("hidden");
+                });
+            }
+        })
+    </script>
+    <script>
+        (function () {
+
+                    var current = 0;
+
+                    var max = 0;
+
+                    var container;
+
+                    var interval;
+
+                    var xml;
+
+                    var animateTarget = null;
+
+                    function init() {
+
+                        container = jQuery(".slide ul");
+
+                        max = container.children().length;
+
+                        //console.log();
+
+                        events();
+
+                        interval = setInterval(next, 3000);
+
+                    }
+
+                    // 무한 롤링 셋팅
+
+                    function setting() {
+
+                        container.css("margin-left", "-600px");
+
+                        container.prepend(container.children()[max - 1]);
+
+                    }
+
+                    function events() {
+
+                        jQuery("button.prev").on("click", prev);
+
+                        jQuery("button.next").on("click", next);
+
+                        jQuery(window).on("keydown", keydown);
+
+                    }
+
+                    function prev(e) {
+
+                        current--;
+
+                        if (current < 0) current = max - 1;
+
+                        animate("prev");    // pram
+
+                    }
+
+                    function next(e) {
+
+                        current++;
+
+                        if (current > max - 1) current = 0;
+
+                        animate("next");    // pram
+
+                    }
+
+                    function animate($direction) {
+
+                        if (animateTarget != null) {
+
+                            TweenMax.killTweensOf(animateTarget);
+
+                            animateTarget.css("margin-left", "0");
+
+                        }
+
+                        if ($direction == "next") {
+
+                            jQuery(container.children()[1]).css("margin-left", "600px");
+
+                            container.append(container.children()[0]);
+
+                        } else if ($direction == "prev") {
+
+                            container.prepend(container.children()[max - 1]);
+
+                            jQuery(container.children()[0]).css("margin-left", "-600px");
+
+                        }
+
+                        animateTarget = jQuery(container.children()[0]);
+
+                        TweenMax.to(animateTarget, 0.8, { marginLeft: 0, ease: Expo.easeOut });
+
+                        clearInterval(interval);  // 누적된어 있는것을 클리어 함
+
+                        interval = setInterval(next, 3000);  // Interval 누적됨
+
+                    }
+
+                    function keydown(e) {
+
+                        //console.log(e); 키보드 이벤트 로그
+
+                        if (e.which == 39 /*right*/) {
+
+                            next();
+
+                        } else if (e.which == 37 /*left*/) {
+
+                            prev();
+
+                        }
+
+                    }
+
+                    jQuery(document).ready(init);
+
+                })();
+    </script>
+</head>
+<style>
+    * {
+        font-family: 'Noto Sans KR', sans-serif;
+        word-break: keep-all;
+        white-space: normal;
+        /* text-indent: 1rem; */
+    }
+</style>
+
+<body>
+    <!-- Header section -->
+    <header class="large-hero">
+        <nav class="flex w-full bg-white top-0 p-5 z-10">
+            <div class="w-full lg:w-10/12 lg:mx-auto xl:w-9/12 2xl:w-8/12">
+                <div class="flex flex-wrap justify-between">
+                    <div class="flex justify-between flex-shrink-0 flex-1">
+                        <div class="cursor-pointer">
+                            <a href="#"><img class="h-9" src="./image/astalogo/asta_logo_en.svg" alt="Astaplatform logo" /></a>
+                        </div>
+
+                        <div class="block lg:hidden">
+                            <button id="nav-toggle" class="text-blue-800">
+                                <svg
+                                class="fill-current h-8 w-8"
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                class="feather feather-menu"
+                                >
+                                <line x1="3" y1="12" x2="21" y2="12"></line>
+                                <line x1="3" y1="6" x2="21" y2="6"></line>
+                                <line x1="3" y1="18" x2="21" y2="18"></line>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <!-- Menu items -->
+                    <div id="nav-content" class="nav-content hidden w-full pt-6 lg:flex lg:items-center lg:w-auto lg:pt-0">
+                        <ul class="lg:flex flex-1">
+                            <li>
+                                <a href="#">Home</a>
+                            </li>
+                            <li class="m2">
+                                <a href="#about">About ASTA</a>
+                            </li>
+                            <li class="m3">
+                                <a href="#feature">Our Features</a>
+                            </li>
+                            <li class="m4">
+                                <a href="#astatour">The ASTA</a>
+                            </li>
+                            <li class="m5">
+                                <a href="#history">History</a>
+                            </li>
+                            <li class="m6">
+                                <a href="#team">Team</a>
+                            </li>
+                            <li>
+                                <div class="dropdown inline-block relative text-sm">
+                                    <div class="flex bg-gray-100 px-2 py-1 rounded">
+                                        <i class="my-auto fas fa-globe text-green-500"></i>
+                                        <p class="pl-2 font-light">KR</p>
+                                    </div>
+                                    <div class="absolute hidden dropdown-menu text-blue-700 pt-1 pl-0.5">
+                                        <a class="block px-4 py-1 text-center rounded-t bg-gray-200 hover:bg-gray-300" href="./cn.html">CN</a>
+                                        <a class="block px-4 py-1 text-center rounded-b bg-gray-200 hover:bg-gray-300" href="./en.html">EN</a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div> 
+        <!-- Hero image -->
+        <div class="site-hero">
+            <div class="hero-image">
+                <div class="t_video">
+                    <video muted autoplay loop width="100%">
+                        <source src="video/asta_movie.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="w-full lg:w-10/12 lg:mx-auto xl:w-9/12 2xl:w-8/12">
+                    <div class="site-hero__container" data-aos="zoom-in" data-aos-duration="1000">
+                        <div class="site-hero__text text-white mb-6">
+                            <h1 class="text-xl font-extrabold py-2 md:text-3xl xl:text-5xl xl:leading-tight 2xl:text-7xl">
+                                Digital Asset ASTA,<br />Innovation of the Future
+                            </h1>
+                            <p class="xl:text-xl py-2">진화하는 가상자산 플랫폼 ASTA</p>
+                        </div>
+                        <div>
+                            <a href="./ASTA_white_kr_0511_2020-09-14.pdf" class="btn btn--primary" target="_blank">White
+                                paper</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="exchange">
+        <div class="wrapper" style="padding:0 1rem;">
+            <div class="container">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide" data-swiper-autoplay="1500">
+                            <div class="slide_wrap">
+                                <div class="exe_logo">
+                                    <h2><img src="image/bit_logo.png" alt="bithumb" style="max-width:100%;height:35px;margin-top:-10px" /></h2>
+                                </div>
+
+                                <div class="exe_list">
+                                    <dl>
+                                        <dt>실시간 시세</dt>
+                                        <dd>60.00 원</dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide" data-swiper-autoplay="1500">
+                            <div class="slide_wrap">
+                                <div class="exe_logo">
+                                    <h2><img src="image/coinone_logo.png" alt="coinone" /></h2>
+                                </div>
+                        
+                                <div class="exe_list">
+                                    <dl>
+                                        <dt>실시간 시세</dt>
+                                        <dd>60.00 원</dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide" data-swiper-autoplay="1500">
+                            <div class="slide_wrap">
+                                <div class="exe_logo">
+                                    <h2><img src="image/cashierest_logo.png" alt="cashierest" /></h2>
+                                </div>
+                        
+                                <div class="exe_list">
+                                    <dl>
+                                        <dt>실시간 시세</dt>
+                                        <dd>60.00 원</dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide" data-swiper-autoplay="1500">
+                            <div class="slide_wrap">
+                                <div class="exe_logo">
+                                    <h2><img src="image/biki_logo.png" alt="biki" /></h2>
+                                </div>
+                        
+                                <div class="exe_list">
+                                    <dl>
+                                        <dt>실시간 시세</dt>
+                                        <dd>60.00 원</dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+        </div>       
+    </div>
+    <!-- About Asta section -->
+    <section id="about" class="about bg-gray-100">
+        <div class="wrapper">
+            <div class="container">
+                <div class="section-title">
+                    <span>About</span>
+                    <div class="section-content">
+                        <p class="">
+                            ASTA 플랫폼은 모든 사람을 위해 만들어진 다기능 생태계를 추구합니다. 결과적으로 ASTA 비즈니스의 확장성은 지역이나 산업에 국한되지 않습니다. ASTA 플랫폼은 플랫폼과 네트워크 참여자 모두에게 이익이 되도록 설계되었으며, ASTA 플랫폼은 ASTA에 가입하려는 모든 사람에게 열려 있습니다. 그 결과 ASTA는 쇼핑, 숙박, 의료 등 다양한 분야의 기업과 손을 잡고 산업을 연결하는 플랫폼을 형성했습니다. 또한 ASTA 생태계와 연동할 수 있는
+                            다양한 마케팅 플랫폼을 보유하고 있으며, 플랫폼 참여자의 점진적이고 무한한 증가를 위해 비즈니스 모델에 편의성과 응용성을 결합합니다.
+                        </p>
+                    </div>
+                </div>
+                <div class="container about-image image-wrapper pt-8"  data-aos="fade-right" data-aos-duration="2000">
+                    <picture>
+                        <source srcset="./image/picture/Astaplatform-desktop-1160w.svg" media="(min-width: 1280px)" />
+                        <source srcset="./image/picture/Astaplatform-tablet-768w.svg" media="(min-width: 768px)" />
+                        <img class="justify-self-stretch" src="./image/picture/Astaplatform-mobile-414w.svg" alt="" />
+                    </picture>
+                    <div class="my-8">
+                        <img class="w-60" src="./image/logo_kr_en.svg" alt="" />
+                    </div>
+                </div>
+                <div class="section-title">
+                    <div class="section-content">
+                        <p class="">
+                            코인네임 ASTA 심볼은 방패 모양의 형상으로 기업의 신뢰, 비전과 가치가 모여 안전한 자산을 만들겠다는 의지를 표현한다. 컬러는 맑고 투명한 Mint Blue, 신뢰감이 돋보이는 Navy blue 컬러를 활용하여, 신뢰성, 창조적, 변화와 젊음을 상징하다.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Technology -->
+    <section id="technology" class="technology" style="background-image: url('./image/feature_bg_small')">
+        <div class="wrapper">
+            <div class="container">
+                <div class="section-title section-title__white pb-8">
+                    <span class="tech-title">The Application technoloy</span>
+                    <!-- <p class="section-text py-4">Lorem ipsum dolor sit.</p> -->
+                </div>
+                <div class="tech__items">
+                    <div class="tech__item group" data-aos="fade-right" data-aos-duration="1100">
+                        <div class="img-wrapper">
+                            <img class="" src="./image/icons/1.svg" alt="" />
+                        </div>
+                        <span class="item-title group-hover:text-gray-50">Multi Block-Chain</span>
+                        <p class="item-text group-hover:text-gray-50">
+                            일반적으로 사용되는 단일 블록체인을 지양하고 특정목적에 맞게 다중으로 연동·운영되도록 설계되었습니다.
+                        </p>
+                    </div>
+                    <div class="tech__item group" data-aos="zoom-in" data-aos-duration="1000">
+                        <div class="img-wrapper">
+                            <img class="" src="./image/icons/2.svg" alt="" />
+                        </div>
+                        <span class="item-title group-hover:text-gray-50">Hyper Converged Infrastructure</span>
+                        <p class="item-text group-hover:text-gray-50">
+                            가상화된 인프라를 기반으로 클라우드 서비스와의 결합이 가능할 수 있도록 적용된 기술입니다.
+                        </p>
+                    </div>
+                    <div class="tech__item group"  data-aos="fade-left" data-aos-duration="1100">
+                        <div class="img-wrapper">
+                            <img class="" src="./image/icons/3.svg" alt="" />
+                        </div>
+                        <span class="item-title group-hover:text-gray-50">Front Grid Backend Multi Flexing</span>
+                        <p class="item-text group-hover:text-gray-50">
+                            플랫폼 내에서의 안정적이고 정확한 처리 및 보안 강화를 위하여 적용된 기술입니다.
+                        </p>
+                    </div>
+                    <div class="tech__item group" data-aos="zoom-in-right" data-aos-duration="1100">
+                        <div class="img-wrapper">
+                            <img class="" src="./image/icons/4.svg" alt="" />
+                        </div>
+                        <span class="item-title group-hover:text-gray-50">Atomic Exchange</span>
+                        <p class="item-text group-hover:text-gray-50">
+                            다중 블록체인 구조를 블록체인 내의 거래소를 통해 거래 기능이 이루어 질 수 있도록 설계하였습니다.
+                        </p>
+                    </div>
+                    <div class="tech__item group" data-aos="zoom-in" data-aos-duration="1000">
+                        <div class="img-wrapper">
+                            <img class="" src="./image/icons/5.svg" alt="" />
+                        </div>
+                        <span class="item-title group-hover:text-gray-50">Multi Swap</span>
+                        <p class="item-text group-hover:text-gray-50">
+                            다른 블록체인과의 데이터를 교환할 수 있도록 하는 데이터 상호 연동 기술입니다.
+                        </p>
+                    </div>
+                    <div class="tech__item group" data-aos="zoom-in-left" data-aos-duration="1100">
+                        <div class="img-wrapper">
+                            <img class="" src="./image/icons/6.svg" alt="" />
+                        </div>
+                        <span class="item-title group-hover:text-gray-50">Half-Private Block-Chain</span>
+                        <p class="item-text group-hover:text-gray-50">
+                            개인의 자산보호와 거래속도 및 시스템의 운영에 집중하고 더욱 진보된 상황을 유도를 위해 적용된 기술입니다.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Structure -->
+    <section class="structure">
+        <div class="wrapper">
+            <div class="container">
+                <div class="section-title">
+                    <span>Structure of asta platform</span>
+                    <div class="section-content">
+                        <p class="">
+                            ASTA 플랫폼은 결제 시스템을 제공함으로써 기존의 카드사와 PG 사에 지불해야 하는 수수료를 대폭 낮춰 제휴사의 시장 경쟁력을 확보할 수 있는 기회를 제공하고, 이용자들에게는 환율에 따른 환전에 대한 불편함을 해소할 수 있을 뿐만 아니라 전 세계의 모든 가맹점에서 사용 가능한 가상 자산을 제공함으로써 효용성을 극대화하여 이용자에게 혜택으로 돌아가는 생태계를 만들어 나가는 것이 ASTA 플랫폼이 추구하는 목표입니다. 이러한 플랫폼을 완성하기 위해서
+                            ASTA뿐만 아니라 사용자 편의를 위해서 ASTA를 기축통화로 하여 Multi-Swap 기술로 세계 주요 통화에 기반하는 스테이블 코인(Stable-Coin) 뿐만 아니라 BTC, ETH 등의 주요 코인 간의 상호 교환이 가능하도록 설계 및 진행 중에 있습니다.
+                        </p>
+                    </div>
+                </div>
+                <div class="image-wrapper" data-aos="fade-up" data-aos-duration="1500">
+                    <picture class="">
+                        <source srcset="./image/picture/astaplatform_structure_large.svg" media="(min-width: 1280px)" />
+                        <source srcset="./image/picture/astaplatform_structure_large.svg" media="(min-width: 1024px)" />
+                        <source srcset="./image/picture/astaplatform_structure_large.svg" media="(min-width: 768px)" />
+                        <img class="" src="./image/picture/astaplatform_structure_small.svg" alt="" />
+                    </picture>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Our Features -->
+    <section id="feature">
+        <div class="wrapper">
+            <div class="container">
+                <div class="section-title">
+                    <span>Our Features</span>
+                    <div class="section-content">
+                        <p class="">
+                            ASTA 플랫폼의 최종 형태는 전 세계 사람들이 불편함 없이 언제 어디서든 손쉽게 이용 가능한 결제 시스템과 ASTA를 중심으로 하는 생태계를 구현하는 것으로, 이를 위해 ASTA 플랫폼은 플랫폼 참여자, 전략적 제휴 파트너를 포함한 네트워크 참여자 모두가 더 많은 이익을 가질 수 있도록 하는 것을 목표로 세계 어디서나 환전 없이 사용할 수 있는 글로벌 결제 수단으로 자리매김할 수 있는 계획을 실현 중입니다.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="feature">
+        <div class="wrapper">
+            <div class="container">
+                <div class="image-wrapper" data-aos="flip-left" data-aos-duration="1500">
+                    <picture>
+                        <source srcset="./image/feature-large.svg" media="(min-width: 1280px)" />
+                        <source srcset="./image/feature-medium.svg" media="(min-width: 768px)" />
+                        <source srcset="./image/feature-medium.svg" media="(min-width: 640px)" />
+                        <img src="./image/feature-small.svg" alt="">
+                    </picture>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- The ASTA -->
+    <section id="astatour" class="astatour-bg bg-gray-50 py-0">
+        <div class="w-full overflow-hidden relative">
+            <picture>
+                <source srcset="./image/astatour-bg.svg" media="(min-width: 1280px)" />
+                <source srcset="./image/astatour-bg-small.svg" media="(min-width: 640px)" />
+                <img class="absolute inset-0 w-full h-full object-cover" src="./image/astatour-bg-mobile.svg" alt="">
+            </picture>
+            <div class="absolute inset-0 bg-opacity-50"></div>
+            <div class="the-asta flex h-full items-center justify-center relative">
+                <div class="wrapper">
+                    <div class="container">
+                        <div class="ta-container">
+                            <div class="hidden absolute inset-0 xl:block" data-aos="flip-left" data-aos-duration="2000">
+                                <img class="mx-auto h-3/5 mt-44 2xl:h-2/3" src="./image/astatour-screen.png" alt="">
+                            </div>
+                            <div class="ta-text-content" data-aos="fade-down-right" data-aos-duration="1500">
+                                <div class="mt-4 py-2 text-blue-800 sm:my-auto xl:mt-16 xl:flex-1 2xl:mt-12">
+                                    <p class="text-3xl font-bold text-center sm:text-left lg:text-4xl xl:text-5xl 2xl:text-6xl">THE ASTA</p>
+                                    <p class="mt-1.5 text-sm font-bold text-center sm:text-left lg:text-xl xl:mt-3 2xl:text-2xl 2xl:mt-4">ASTA 생태계 구현의 시작점, 디 아스타</p>
+                                    <img class="w-48 mx-auto mt-2.5 sm:hidden" src="./image/the_asta.png" alt="">
+                                    <p class="mt-2.5 text-xs font-light lg:text-base xl:flex xl:mt-5 2xl:text-xl 2xl:mt-6">커피부터 여행까지 특별한 가격으로 만나는<span class="hidden font-bold xl:flex xl:ml-2">가상자산 플랫폼 THE ASTA</span></p>
+                                    <p class="text-xs font-bold lg:text-base xl:hidden">가상자산 플랫폼 THE ASTA</p>
+                                    <p class="mt-2.5 text-xs font-light lg:text-base xl:mt-0 2xl:text-xl">나의 생활 속으로 들어온 블록체인을 만나다</p>
+                                    <p class="mt-2.5 text-xs font-light lg:text-base xl:mt-5 2xl:text-xl 2xl:mt-6">최고급 호텔&리조트 <span class="font-bold">최대 90% 이용 혜택</span></p>
+                                    <p class="text-xs font-light lg:text-base 2xl:text-xl">모바일 바우처 <span class="font-bold">최대 23% 이용 혜택</span></p>
+                                    <div class="flex justify-end mt-5 mb-10 sm:mb-4 sm:justify-start lg:mt-6 xl:mt-8 2xl:mt-10">
+                                        <a href="https://astatour.com/?lang=ko" target="_blank" class="h-8 px-1 py-2 text-xs text-gray-50 bg-blue-800 hover:bg-blue-700 rounded lg:h-9 lg:text-sm lg:px-2 xl:px-1 2xl:h-12 2xl:text-base 2xl:px-2 2xl:py-3">THE ASTA 바로가기<i class="ml-2 fas fa-angle-right"></i></a>
+                                        <a id="theAstaDown" href="./download/the_asta/kr/index.html" target="_blank" class="hidden h-8 ml-4 px-2 py-2 text-xs text-gray-50 bg-blue-800 hover:bg-blue-700 rounded lg:h-9 lg:text-sm lg:px-4 xl:ml-2 xl:px-2 2xl:text-base 2xl:h-12 2xl:ml-6 2xl:px-6 2xl:py-3">APP 다운로드<i class="ml-1 fas fa-angle-right"></i></a>
+                                        <div id="theAstaQR" class="hidden ml-4 xl:ml-2 2xl:ml-6">
+                                            <img class="h-20 w-20 mx-auto border border-gray-400 object-contain 2xl:h-28 2xl:w-28" src="./image/qr_the_asta_kr.svg" alt="">
+                                            <p class="text-xs text-center text-blue-800">APP 다운로드</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="hidden ml-10 mt-12 mb-16 sm:block lg:ml-24 xl:hidden">
+                                    <img class="h-80 lg:h-96" src="./image/the_asta.png" alt="">
+                                </div>
+                            </div>
+                            <div class="ta-text-content" data-aos="fade-up-left" data-aos-duration="1500">
+                                <div class="hidden mr-10 mt-16 mb-12 sm:block lg:mr-24 xl:hidden">
+                                    <img class="h-80 lg:h-96" src="./image/asta_wallet.png" alt="">
+                                </div>
+                                <div class="mt-8 py-2 text-blue-800 sm:my-auto xl:mb-16 xl:flex-1 2xl:mb-12">
+                                    <p class="text-3xl font-bold text-center sm:text-right lg:text-4xl xl:text-5xl 2xl:text-6xl">ASTA WALLET</p>
+                                    <p class="mt-1.5 text-sm font-bold text-center sm:text-right lg:text-xl xl:mt-3 2xl:text-2xl 2xl:mt-4">쉽게 만나는 자산 관리의 혁신, 아스타 월렛</p>
+                                    <img class="w-48 mx-auto mt-2.5 sm:hidden" src="./image/asta_wallet.png" alt="">
+                                    <p class="mt-2.5 text-xs font-light sm:text-right lg:text-base xl:mt-5 2xl:text-xl 2xl:mt-6">최소한의 터치로 만나는 <span class="font-bold">쉽고 빠른 송금 서비스</span></p>
+                                    <p class="text-xs font-light sm:text-right lg:text-base 2xl:text-xl">실시간으로 확인하는 나만의 투자 전략</p>
+                                    <p class="mt-2.5 text-xs font-bold sm:text-right lg:text-base xl:mt-5 2xl:text-xl 2xl:mt-6">ASTA WALLET에서만 제공하는 특별한 혜택의 프로모션</p>
+                                    <p class="text-xs font-bold sm:text-right lg:text-base 2xl:text-xl">글로벌 투자 전문가들의 트렌드 분석을 반영한 투자 기회</p>
+                                    <div class="flex mt-5 mb-8 text-right justify-end sm:mb-4 lg:mt-6 xl:mt-8 2xl:mt-10">
+                                        <a id="astaWalletDown" href="./download/asta_wallet/kr/index.html" target="_blank" class="hidden h-8 px-2 py-2 text-xs text-gray-50 bg-blue-800 hover:bg-blue-700 rounded lg:h-9 lg:text-sm lg:px-4 2xl:h-12 2xl:text-base 2xl:ml-6 2xl:px-6 2xl:py-3">APP 다운로드<i class="ml-1 fas fa-angle-right"></i></a>
+                                        <div id="astaWalletQR" class="hidden ml-4 xl:ml-2 2xl:ml-6">
+                                            <img class="h-20 w-20 mx-auto border border-gray-400 object-contain 2xl:h-28 2xl:w-28" src="./image/qr_asta_wallet_kr.svg" alt="">
+                                            <p class="text-xs text-center text-blue-800">APP 다운로드</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- History -->
+    <section id="history" class="history">
+        <div class="wrapper">
+            <div class="container">
+                <div class="section-title">
+                    <span>History</span>
+                    <p class="section-subtitle">
+                        Technical & Business history
+                    </p>
+                </div>
+                <div class="image-wrapper pt-8" data-aos="flip-up"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000">
+                    <picture>
+                        <source srcset="./image/history-large.svg" media="(min-width: 1280px)" />
+                        <source srcset="./image/history-medium.svg" media="(min-width: 768px)" />
+                        <source srcset="./image/history-medium.svg" media="(min-width: 640px)" />
+                        <img src="./image/history-mobile.svg" alt="">
+                    </picture>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Team Members -->
+    <section id="team" class="team bg-gray-100">
+        <div class="wrapper">
+            <div class="container">
+                <div class="section-title">
+                    <span>Team</span>
+                    <p class="section-subtitle">
+                        We provide the solution for asset management
+                    </p>
+                </div>
+                <!-- team members -->
+                <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 xl:grid-cols-4 2xl:grid-cols-6 gap-4" >
+                        <div class="item border border-gray-300 bg-white hover:shadow-lg" data-aos="fade-down"
+     data-aos-anchor-placement="top-center" data-aos-duration="1000">
+                            <div class="our-team">
+                                <div class="member-image">
+                                    <img class="w-full" src="./image/team/Ukseonhu.png" alt="" />
+                                </div>
+                                <div class="middle">
+                                    <div class="linked text-blue-700">
+                                        <a href="https://www.linkedin.com/in/%EC%88%9C%ED%98%B8-%EC%98%A5-90124090/" class="icon" target="_blank" title="User Profile">
+                                            <i class="fab fa-linkedin"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="our-team__member-content">
+                                    <p class="our-team__member-name">옥순호</p>
+                                    <p class="our-team__member-position">프로젝트 총괄</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item border border-gray-300 bg-white hover:shadow-lg" data-aos="fade-down"
+     data-aos-anchor-placement="top-center" data-aos-duration="1000">
+                            <div class="our-team">
+                                <div class="member-image">
+                                    <img class="w-full" src="./image/team/kimsonggeoyn.png" alt="" />
+                                </div>
+                                <div class="middle">
+                                    <div class="linked text-blue-700">
+                                        <a href="https://www.linkedin.com/in/%EC%84%B1%EA%B7%A0-%EA%B9%80-8910656a/" class="icon" target="_blank" title="User Profile">
+                                            <i class="fab fa-linkedin"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="our-team__member-content">
+                                    <p class="our-team__member-name">김성균</p>
+                                    <p class="our-team__member-position">개발총괄</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item border border-gray-300 bg-white hover:shadow-lg" data-aos="fade-down"
+     data-aos-anchor-placement="top-center" data-aos-duration="1000">
+                            <div class="our-team">
+                                <div class="member-image">
+                                    <img class="w-full" src="./image/team/Oheoseong.png" alt="" />
+                                </div>
+                                <div class="middle">
+                                    <div class="linked text-blue-700">
+                                        <a href="https://www.linkedin.com/in/hyo-sang-you-6569601b6/" class="icon" target="_blank" title="User Profile">
+                                            <i class="fab fa-linkedin"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="our-team__member-content">
+                                    <p class="our-team__member-name">유효상</p>
+                                    <p class="our-team__member-position">
+                                        백앤드, Data Architect, Big Data
+                                    </p>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="item border border-gray-300 bg-white hover:shadow-lg" data-aos="fade-down"
+     data-aos-anchor-placement="top-center" data-aos-duration="1000">
+                            <div class="our-team">
+                                <div class="member-image">
+                                    <img class="w-full" src="./image/team/packheewon.png" alt="" />
+                                </div>
+                                <div class="middle">
+                                    <div class="linked text-blue-700">
+                                        <a href="https://www.linkedin.com/in/heewon-park-266348126" class="icon" target="_blank" title="User Profile">
+                                            <i class="fab fa-linkedin"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="our-team__member-content">
+                                    <p class="our-team__member-name">박희원</p>
+                                    <p class="our-team__member-position">iOS Application</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item border border-gray-300 bg-white hover:shadow-lg" data-aos="fade-down"
+     data-aos-anchor-placement="top-center" data-aos-duration="1000">
+                            <div class="our-team">
+                                <div class="member-image">
+                                    <img class="w-full" src="./image/team/leetaguan.png" alt="" />
+                                </div>
+                                <div class="middle">
+                                    <div class="linked text-blue-700">
+                                        <a href="https://www.linkedin.com/in/taekwang-lee-444b981b5" class="icon" target="_blank" title="User Profile">
+                                            <i class="fab fa-linkedin"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="our-team__member-content">
+                                    <p class="our-team__member-name">이태광</p>
+                                    <p class="our-team__member-position">
+                                        프론트앤드, 결재 및 지갑서비스
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item border border-gray-300 bg-white hover:shadow-lg" data-aos="fade-down"
+     data-aos-anchor-placement="top-center" data-aos-duration="1000">
+                            <div class="our-team">
+                                <div class="member-image">
+                                    <img class="w-full" src="./image/team/baagii.png" alt="" />
+                                </div>
+                                <div class="middle">
+                                    <div class="linked text-blue-700">
+                                        <a href="https://www.linkedin.com/mwlite/in/batbayar-khandish-5445319b" class="icon" target="_blank" title="User Profile">
+                                            <i class="fab fa-linkedin"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="our-team__member-content">
+                                    <p class="our-team__member-name">Batbayar Khandish</p>
+                                    <p class="our-team__member-position">블록체인, 마이닝</p>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="item border border-gray-300 bg-white hover:shadow-lg" data-aos="fade-up"
+     data-aos-anchor-placement="top-center" data-aos-duration="1000">
+                            <div class="our-team">
+                                <div class="member-image">
+                                    <img class="w-full" src="./image/team/wonseok.png" alt="" />
+                                </div>
+                                <div class="middle">
+                                    <div class="linked text-blue-700">
+                                        <a href="https://www.linkedin.com/in/wonseok-lee-310b9a1b5/" class="icon" target="_blank" title="User Profile">
+                                            <i class="fab fa-linkedin"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="our-team__member-content">
+                                    <p class="our-team__member-name">이원석</p>
+                                    <p class="our-team__member-position">
+                                        Android Application
+                                    </p>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="item border border-gray-300 bg-white hover:shadow-lg" data-aos="fade-up"
+     data-aos-anchor-placement="top-center" data-aos-duration="1000">
+                            <div class="our-team">
+                                <div class="member-image">
+                                    <img class="w-full" src="./image/team/Jeongjiyong.png" alt="" />
+                                </div>
+                                <div class="middle">
+                                    <div class="linked text-blue-700">
+                                        <a href="http://linkedin.com/in/jiyong-jeong-a6ab971b5" class="icon" target="_blank" title="User Profile">
+                                            <i class="fab fa-linkedin"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="our-team__member-content">
+                                    <p class="our-team__member-name">정지용</p>
+                                    <p class="our-team__member-position">
+                                        시스템 운영, 블록체인 노드
+                                    </p>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="item border border-gray-300 bg-white hover:shadow-lg" data-aos="fade-up"
+     data-aos-anchor-placement="top-center" data-aos-duration="1000">
+                            <div class="our-team">
+                                <div class="member-image">
+                                    <img class="w-full" src="./image/team/seonjee.png" alt="" />
+                                </div>
+                                <div class="middle">
+                                    <div class="linked text-blue-700">
+                                        <a href="https://www.linkedin.com/in/sungjae-jin-89411b154/" class="icon" target="_blank" title="User Profile">
+                                            <i class="fab fa-linkedin"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="our-team__member-content">
+                                    <p class="our-team__member-name">진성재</p>
+                                    <p class="our-team__member-position">블록체인, 월렛</p>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="item border border-gray-300 bg-white hover:shadow-lg" data-aos="fade-up"
+     data-aos-anchor-placement="top-center" data-aos-duration="1000">
+                            <div class="our-team">
+                                <div class="member-image">
+                                    <img class="w-full" src="./image/team/zolzaya.png" alt="" />
+                                </div>
+                                <div class="middle">
+                                    <div class="linked text-blue-700">
+                                        <a href="https://www.linkedin.com/in/lkhagvasuren-zolzaya-a43727111/" class="icon" target="_blank" title="User Profile">
+                                            <i class="fab fa-linkedin"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="our-team__member-content">
+                                    <p class="our-team__member-name">
+                                        Zolzaya Lkhagvasuren
+                                    </p>
+                                    <p class="our-team__member-position">UI&UX Design</p>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="item border border-gray-300 bg-white hover:shadow-lg" data-aos="fade-up"
+     data-aos-anchor-placement="top-center" data-aos-duration="1000">
+                            <div class="our-team">
+                                <div class="member-image">
+                                    <img class="w-full" src="./image/team/tamiraa.png" alt="" />
+                                </div>
+                                <div class="middle">
+                                    <div class="linked text-blue-700">
+                                        <a href="http://linkedin.com/in/tamiraa-d-3094b821" class="icon" target="_blank" title="User Profile">
+                                            <i class="fab fa-linkedin"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="our-team__member-content">
+                                    <p class="our-team__member-name">
+                                        Ulziitamir Davaadorj
+                                    </p>
+                                    <p class="our-team__member-position">
+                                        시스템 및 서비스 보안
+                                    </p>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="item border border-gray-300 bg-white hover:shadow-lg" data-aos="fade-up"
+     data-aos-anchor-placement="top-center" data-aos-duration="1000">
+                            <div class="our-team">
+                                <div class="member-image">
+                                    <img class="w-full" src="./image/team/javkhaa.png" alt="" />
+                                </div>
+                                <div class="middle">
+                                    <div class="linked text-blue-700">
+                                        <a href="https://www.linkedin.com/in/javkhlan-gansukh" class="icon" target="_blank" title="User Profile">
+                                            <i class="fab fa-linkedin"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="our-team__member-content">
+                                    <p class="our-team__member-name">Javkhlan Gansukh</p>
+                                    <p class="our-team__member-position">백앤드, API 서비스</p>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Partners 
+    <section class="partner">
+        <div class="wrapper">
+            <div class="container">
+                <div class="section-title">
+                    <span>Crypto Exchange partners</span>
+                </div>
+                <div class="partners-box flex flex-col pt-6 md:flex-row md:justify-center md:pt-10">
+                    <div class="partner-item image-wrapper p-2">
+                        <a href="https://coinone.co.kr/" target="_blank">
+                            <img src="./image/picture/coinone.svg" alt="" />
+                        </a>
+                    </div>
+                    <div class="partner-item image-wrapper p-2">
+                        <a href="https://www.cashierest.com/" target="_blank">
+                            <img src="./image/picture/cashierest.svg" alt="" />
+                        </a>
+                    </div>
+                    <div class="partner-item image-wrapper p-2">
+                        <a href="https://www.biki.com/ko_KR/" target="_blank">
+                            <img src="./image/picture/biki.svg" alt="" />
+                        </a>
+                    </div>
+                    <div class="partner-item image-wrapper p-2">
+                        <a href="https://www.bithumb.com/" target="_blank">
+                            <img src="./image/picture/bithumb.svg" alt="" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    -->
+    <!-- 2021/05 제휴사 slide 추가 -->
+    <!-- Slider main container -->
+    <section class="partner">
+        <div class="section-title">
+            <span>Crypto Exchange partners</span>
+        </div>
+        
+    </section>
+    <!-- 2021/05 제휴사 slide 추가 -->
+    <!-- Footer section -->
+    <footer class="footer bg-gray-900">
+        <div class="wrapper">
+            <div class="container">
+                <div class="flex flex-col text-center lg:text-left lg:flex lg:flex-row">
+                    <div class="item-1 lg:w-2/3 text-gray-500 py-5">
+                        <span>Contact us:</span><a class="text-green-600" href="#"> info@astaplatform.com</a>
+                        </p>
+                        <p class="uppercase py-3">
+                            © 2019.<strong>Asta Platform. </strong>
+                        </p>
+                    </div>
+                    <div class="item-2 py-5 flex-col lg:flex-row">
+                        <div class="flex text-gray-300 justify-center">
+                            <div class="icon-box bg-gray-700 hover:bg-red-700">
+                                <a href="https://weibo.com/p/1005057532198157" target="_blank">
+                                    <i class="fab fa-weibo"></i>
+                                </a>
+                            </div>
+                            <div class="icon-box bg-gray-600 hover:bg-green-500">
+                                <a href="https://medium.com/astaplatform" target="_blank">
+                                    <i class="fab fa-medium"></i>
+                                </a>
+                            </div>
+                            <div class="icon-box bg-gray-500 hover:bg-blue-500">
+                                <a href="https://www.facebook.com/AstaGlobal" target="_blank">
+                                    <i class="fab fa-facebook "></i>
+                                </a>
+                            </div>
+                            <div class="icon-box bg-gray-700 hover:bg-blue-300">
+                                <a href="https://twitter.com/Astaplatform" target="_blank">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </div>
+                            <!-- <div class="icon-box bg-gray-800 hover:bg-blue-400">
+                  <i class="fab fa-telegram"></i>
+                </div> -->
+                            <div class="icon-box bg-gray-800 hover:bg-blue-400">
+                                <a href="https://t.me/asta_official" target="_blank">
+                                    <i class="fab fa-telegram"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- <div class="item-3 flex justify-center">
+                <div class="icon-box">
+                  <img src="./image/coingecko.webp" alt="">
+                </div>
+                <div class="icon-box">
+                  <img src="./image/kakaotalk.svg" alt="">
+                </div>
+                <div class="icon-box">
+                  <img src="./image/coinmarketcap.svg" alt="">
+                </div>
+              </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <div
+        class="bottom-bar py-4 text-xs text-center text-gray-500 bg-gray-800"
+      >
+        <p>© 2019.<strong>Asta Platform. </strong> All Right Reserved.</p>
+      </div> -->
+    </footer>
+</body>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script>
+    AOS.init();
+</script>
+<script>
+    var swiper = new Swiper(".swiper-container", {
+        initialSlide: 0,
+        loop: true,
+        loopAdditionalSlides: 1,
+        ticker: true,
+        autoplay: {
+            disableOnInteraction: false,
+        },
+        breakpoints: {
+            1441: {
+                slidesPerView: 3,
+                
+            },
+            1440: {
+                slidesPerView: 2,
+            },
+            1024: {
+                slidesPerView: 2,
+            },
+            768: {
+                slidesPerView: 2,
+            },
+        }
+    });
+</script>
+<script>
+    document.getElementById("nav-toggle").onclick = function () {
+        document.getElementById("nav-content").classList.toggle("hidden");
+    };
+</script>
+</html>
+
+

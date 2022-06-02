@@ -1,0 +1,27 @@
+{
+  "name": "kmk",
+  "version": "1.0.0",
+  "description": "kmk main website",
+  "main": "server.js",
+  "scripts": {
+    "test": "test",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://gitlab.asset.or.kr/kmk-korea/website"
+  },
+  "keywords": [
+    "website"
+  ],
+  "author": "Kimjindo",
+  "license": "MIT",
+  "dependencies": {
+    "ejs": "^2.6.1",
+    "express": "^4.17.1",
+    "fs": "0.0.1-security",
+    "http": "0.0.0",
+    "require_once": "^0.4.6",
+    "supervisor": "^0.12.0"
+  }
+}

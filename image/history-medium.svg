@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 25.2.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="레이어_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+	 y="0px" viewBox="0 0 758 946.7" style="enable-background:new 0 0 758 946.7;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#0D2836;}
+	.st1{font-family:'NotoSansCJKkr-Light-KSCpc-EUC-H';}
+	.st2{font-size:14px;}
+	.st3{fill:#00B5BE;}
+	.st4{font-family:'NotoSansCJKkr-Black-KSCpc-EUC-H';}
+	.st5{font-size:16px;}
+	.st6{fill:url(#Rectangle_1917-2_1_);}
+	.st7{fill:url(#Rectangle_1924-2_1_);}
+	.st8{fill:none;stroke:#033D61;}
+	.st9{fill:#FFFFFF;}
+	.st10{fill:#033D61;}
+	.st11{font-family:'Roboto-Regular';}
+	.st12{font-size:18px;}
+	.st13{fill:none;stroke:#033D61;stroke-width:0.5;stroke-miterlimit:10;}
+	.st14{fill:#FFFFFF;stroke:#033D61;}
+	.st15{font-family:'NotoSansArmenian-Regular';}
+</style>
+<text transform="matrix(1 0 0 1 515 377.23)" class="st0 st1 st2">- ASTA로 CI 변경</text>
+<text transform="matrix(1 0 0 1 515 399.23)" class="st0 st1 st2">- 가치고정형 코인(Stable Coin) 연동</text>
+<text transform="matrix(1 0 0 1 515 416.03)" class="st0 st1 st2">  </text>
+<text transform="matrix(1 0 0 1 521.2 416.03)" class="st0 st1 st2"> </text>
+<text transform="matrix(1 0 0 1 523.2 416.03)" class="st0 st1 st2">시스템 구현</text>
+<g>
+	<text transform="matrix(1 0 0 1 515 345.23)" class="st3 st4 st5">4Q</text>
+</g>
+<g transform="matrix(1, 0, 0, 1, 211, 404.67)">
+	
+		<linearGradient id="Rectangle_1917-2_1_" gradientUnits="userSpaceOnUse" x1="-164.3316" y1="-36.6637" x2="-163.3436" y2="-36.6637" gradientTransform="matrix(740 0 0 12 121416 180.6639)">
+		<stop  offset="0" style="stop-color:#0067A7"/>
+		<stop  offset="0.222" style="stop-color:#008C98"/>
+		<stop  offset="1" style="stop-color:#033D61"/>
+	</linearGradient>
+	<path id="Rectangle_1917-2" class="st6" d="M-196-265.3h728c3.3,0,6,2.7,6,6l0,0c0,3.3-2.7,6-6,6h-728c-3.3,0-6-2.7-6-6l0,0
+		C-202-262.6-199.3-265.3-196-265.3z"/>
+</g>
+<g transform="matrix(1, 0, 0, 1, 211, 404.67)">
+	
+		<linearGradient id="Rectangle_1924-2_1_" gradientUnits="userSpaceOnUse" x1="-164.3316" y1="-36.6637" x2="-163.3436" y2="-36.6637" gradientTransform="matrix(740 0 0 12 121416 513.6642)">
+		<stop  offset="0" style="stop-color:#0067A7"/>
+		<stop  offset="0.222" style="stop-color:#008C98"/>
+		<stop  offset="1" style="stop-color:#033D61"/>
+	</linearGradient>
+	<path id="Rectangle_1924-2" class="st7" d="M-196,67.7h728c3.3,0,6,2.7,6,6l0,0c0,3.3-2.7,6-6,6h-728c-3.3,0-6-2.7-6-6l0,0
+		C-202,70.4-199.3,67.7-196,67.7z"/>
+</g>
+<text transform="matrix(1 0 0 1 149.5 250.425)" class="st0 st1 st2">- 실생활 가상자산 플랫폼 개발을</text>
+<text transform="matrix(1 0 0 1 149.5 267.225)" class="st0 st1 st2">  </text>
+<text transform="matrix(1 0 0 1 155.7 267.225)" class="st0 st1 st2"> </text>
+<text transform="matrix(1 0 0 1 157.7 267.225)" class="st0 st1 st2">위한 프로젝트 발의</text>
+<g id="Group_2836" transform="translate(1015.677 -381) rotate(90)">
+	<path id="Path_10293" class="st8" d="M534.8,901.7h51.3"/>
+	<g transform="matrix(0, -1, 1, 0, 795.67, 714.68)">
+		<g id="Ellipse_194-13" transform="translate(130 228.62) rotate(180)">
+			<circle class="st9" cx="317" cy="430.7" r="16"/>
+			<circle class="st8" cx="317" cy="430.7" r="15.5"/>
+		</g>
+	</g>
+	<g id="Ellipse_198" transform="translate(1016.287 592.677) rotate(90)">
+		<circle class="st10" cx="309" cy="422.7" r="8"/>
+		<circle class="st8" cx="309" cy="422.7" r="7.5"/>
+	</g>
+</g>
+<g>
+	<text transform="matrix(1 0 0 1 149.5 220.9096)" class="st3 st4 st5">3Q</text>
+</g>
+<text transform="matrix(1 0 0 1 515 250.4248)" class="st0 st1 st2">- KDAX 거래소와 전략적 제휴</text>
+<text transform="matrix(1 0 0 1 515 272.4248)" class="st0 st1 st2">- 자체 메인넷 및 알파타입 구축</text>
+<text transform="matrix(1 0 0 1 515 294.4248)" class="st0 st1 st2">- 월렛(Wallet) 1.0v 개발 완료 및 배포 </text>
+<text transform="matrix(1 0 0 1 515 316.4248)" class="st0 st1 st2">- 첫 정식 릴리즈</text>
+<g>
+	<text transform="matrix(1 0 0 1 515 220.9095)" class="st3 st4 st5">1Q</text>
+</g>
+<g transform="matrix(1, 0, 0, 1, 211, 404.67)">
+	<g id="Rectangle_1919-2" transform="translate(73 130.33)">
+		<path class="st9" d="M-205-404.7h71c3.3,0,6,2.7,6,6v18c0,3.3-2.7,6-6,6h-71c-3.3,0-6-2.7-6-6v-18C-211-402-208.3-404.7-205-404.7
+			z"/>
+		<path class="st8" d="M-205-404.2h71c3,0,5.5,2.5,5.5,5.5v18c0,3-2.5,5.5-5.5,5.5h-71c-3,0-5.5-2.5-5.5-5.5v-18
+			C-210.5-401.7-208-404.2-205-404.2z"/>
+	</g>
+</g>
+<g>
+	<text transform="matrix(1 0 0 1 88.5 152.334)" class="st10 st11 st12">2017Y</text>
+	<text transform="matrix(1 0 0 1 88.5 152.334)" class="st13 st11 st12">2017Y</text>
+</g>
+<g transform="matrix(1, 0, 0, 1, 211, 404.67)">
+	<g id="Rectangle_1920-2" transform="translate(250 130.33)">
+		<path class="st9" d="M-205-404.7h71c3.3,0,6,2.7,6,6v18c0,3.3-2.7,6-6,6h-71c-3.3,0-6-2.7-6-6v-18C-211-402-208.3-404.7-205-404.7
+			z"/>
+		<path class="st8" d="M-205-404.2h71c3,0,5.5,2.5,5.5,5.5v18c0,3-2.5,5.5-5.5,5.5h-71c-3,0-5.5-2.5-5.5-5.5v-18
+			C-210.5-401.7-208-404.2-205-404.2z"/>
+	</g>
+</g>
+<g>
+	<text transform="matrix(1 0 0 1 265 152.334)" class="st10 st11 st12">2018Y</text>
+	<text transform="matrix(1 0 0 1 265 152.334)" class="st13 st11 st12">2018Y</text>
+</g>
+<g id="Group_2864" transform="translate(-98.677 1484.5) rotate(-90)">
+	<path id="Path_10293-2" class="st8" d="M1354.2,389.7h92.3"/>
+	<g transform="matrix(0, 1, -1, 0, 1079.83, 309.68)">
+		<g id="Ellipse_194-14" transform="translate(275 6)">
+			<circle class="st9" cx="-195" cy="-388.7" r="16"/>
+			<circle class="st8" cx="-195" cy="-388.7" r="15.5"/>
+		</g>
+	</g>
+	<g id="Ellipse_198-2" transform="translate(1065.834 592.677) rotate(90)">
+		<circle class="st10" cx="-203" cy="-396.7" r="8"/>
+		<circle class="st8" cx="-203" cy="-396.7" r="7.5"/>
+	</g>
+</g>
+<text transform="matrix(1 0 0 1 327 58.94)" class="st0 st1 st2">- 프로토타입 구축</text>
+<g>
+	<text transform="matrix(1 0 0 1 327 26)" class="st3 st4 st5">2Q</text>
+</g>
+<g id="Group_2866" transform="translate(-40 -10)">
+	<path id="Path_10293-3" class="st8" d="M519.5,167.3v51.3"/>
+	<g transform="matrix(1, 0, 0, 1, 251, 414.67)">
+		<g id="Ellipse_194-15" transform="translate(495.5 232.33) rotate(180)">
+			<circle class="st9" cx="227" cy="420.7" r="16"/>
+			<circle class="st8" cx="227" cy="420.7" r="15.5"/>
+		</g>
+	</g>
+	<g id="Ellipse_198-3" transform="translate(738.5 639) rotate(180)">
+		<circle class="st10" cx="219" cy="412.7" r="8"/>
+		<circle class="st8" cx="219" cy="412.7" r="7.5"/>
+	</g>
+</g>
+<g id="Group_2867" transform="translate(-40 62.522)">
+	<path id="Path_10293-4" class="st8" d="M519.5,169.3v112.3"/>
+	<g transform="matrix(1, 0, 0, 1, 251, 342.14)">
+		<g id="Ellipse_194-16" transform="translate(495.5 358.23) rotate(180)">
+			<circle class="st9" cx="227" cy="420.7" r="16"/>
+			<circle class="st8" cx="227" cy="420.7" r="15.5"/>
+		</g>
+	</g>
+	<g id="Ellipse_198-4" transform="translate(738.5 692.374) rotate(180)">
+		<circle class="st10" cx="219" cy="412.7" r="8"/>
+		<circle class="st8" cx="219" cy="412.7" r="7.5"/>
+	</g>
+</g>
+<g transform="matrix(1, 0, 0, 1, 211, 404.67)">
+	<g id="Rectangle_1921-2" transform="translate(438 130.33)">
+		<path class="st9" d="M-205-404.7h71c3.3,0,6,2.7,6,6v18c0,3.3-2.7,6-6,6h-71c-3.3,0-6-2.7-6-6v-18C-211-402-208.3-404.7-205-404.7
+			z"/>
+		<path class="st8" d="M-205-404.2h71c3,0,5.5,2.5,5.5,5.5v18c0,3-2.5,5.5-5.5,5.5h-71c-3,0-5.5-2.5-5.5-5.5v-18
+			C-210.5-401.7-208-404.2-205-404.2z"/>
+	</g>
+</g>
+<g>
+	<text transform="matrix(1 0 0 1 453.5 152.334)" class="st10 st11 st12">2019Y</text>
+	<text transform="matrix(1 0 0 1 453.5 152.334)" class="st13 st11 st12">2019Y</text>
+</g>
+<g transform="matrix(1, 0, 0, 1, 933, 81.67)">
+	<g id="Rectangle_1922-2" transform="translate(73 463.33)">
+		<path class="st9" d="M-927-81.7h71c3.3,0,6,2.7,6,6v18c0,3.3-2.7,6-6,6h-71c-3.3,0-6-2.7-6-6v-18C-933-79-930.3-81.7-927-81.7z"/>
+		<path class="st8" d="M-927-81.2h71c3,0,5.5,2.5,5.5,5.5v18c0,3-2.5,5.5-5.5,5.5h-71c-3,0-5.5-2.5-5.5-5.5v-18
+			C-932.5-78.7-930-81.2-927-81.2z"/>
+	</g>
+</g>
+<g>
+	<text transform="matrix(1 0 0 1 88.5 485.334)" class="st10 st11 st12">2020Y</text>
+	<text transform="matrix(1 0 0 1 88.5 485.334)" class="st13 st11 st12">2020Y</text>
+</g>
+<text transform="matrix(1 0 0 1 149 696.705)" class="st0 st1 st2">- ASTA 플랫폼 제휴사업 런칭 </text>
+<text transform="matrix(1 0 0 1 149 718.705)" class="st0 st1 st2">- 제휴사업 App 및 결제 솔루션 개발 </text>
+<g>
+	<text transform="matrix(1 0 0 1 149 659.766)" class="st3 st4 st5">2Q</text>
+</g>
+<path id="Path_10293-5" class="st8" d="M114,743.6V631.3"/>
+<circle class="st9" cx="114" cy="657.3" r="16"/>
+<path id="Path_10293-6" class="st8" d="M114,708.6V577"/>
+<circle class="st14" cx="114" cy="656.8" r="15.5"/>
+<g id="Ellipse_198-5" transform="translate(1033.874 592.677) rotate(90)">
+	<circle class="st10" cx="64.6" cy="919.9" r="8"/>
+	<circle class="st8" cx="64.6" cy="919.9" r="7.5"/>
+</g>
+<text transform="matrix(1 0 0 1 149 600)" class="st0 st1 st2">- 연계사업 제휴 확장</text>
+<text transform="matrix(1 0 0 1 149 622)" class="st0 st1 st2">- 월렛(Wallet) 2.0v 개발 완료 및 배포 </text>
+<g>
+	<text transform="matrix(1 0 0 1 149 563.0151)" class="st3 st4 st5">1Q</text>
+</g>
+<g transform="matrix(0, 1, -1, 0, 1658.11, 486.68)">
+	<g id="Ellipse_194-18" transform="translate(98 544.95)">
+		<circle class="st9" cx="-23.7" cy="999.2" r="16"/>
+		<circle class="st8" cx="-23.7" cy="999.2" r="15.5"/>
+	</g>
+</g>
+<g id="Ellipse_198-6" transform="translate(1105.154 592.677) rotate(90)">
+	<circle class="st10" cx="-31.7" cy="991.2" r="8"/>
+	<circle class="st8" cx="-31.7" cy="991.2" r="7.5"/>
+</g>
+<path id="Path_10294" class="st8" d="M114,545v-51.6"/>
+<text transform="matrix(1 0 0 1 149 794.203)" class="st0 st1 st2">- 거래소들과의 협업을 통한 지갑</text>
+<text transform="matrix(1 0 0 1 149 811.003)" class="st0 st1 st2">  </text>
+<text transform="matrix(1 0 0 1 155.2 811.003)" class="st0 st1 st2"> </text>
+<text transform="matrix(1 0 0 1 157.2 811.003)" class="st0 st1 st2">및 시스템 생태계 연동</text>
+<g>
+	<text transform="matrix(1 0 0 1 149 769.264)" class="st3 st4 st5">3Q</text>
+</g>
+<text transform="matrix(1 0 0 1 149 901.684)" class="st0 st1 st2">- 가상자산 복합 결재 서비스 구축</text>
+<text transform="matrix(1 0 0 1 149 923.684)" class="st0 st1 st2">- 여행/숙박 플랫폼 ASTATOUR 오픈 </text>
+<g>
+	<text transform="matrix(1 0 0 1 149 870.744)" class="st3 st4 st5">4Q</text>
+</g>
+<g id="Group_2870" transform="translate(-405.5 535.273)">
+	<path id="Path_10293-7" class="st8" d="M519.5,167.3v51.3"/>
+	<g transform="matrix(1, 0, 0, 1, 616.5, -130.61)">
+		<g id="Ellipse_194-19" transform="translate(130 777.61) rotate(180)">
+			<circle class="st9" cx="227" cy="420.7" r="16"/>
+			<circle class="st8" cx="227" cy="420.7" r="15.5"/>
+		</g>
+	</g>
+	<g id="Ellipse_198-7" transform="translate(738.5 639) rotate(180)">
+		<circle class="st10" cx="219" cy="412.7" r="8"/>
+		<circle class="st8" cx="219" cy="412.7" r="7.5"/>
+	</g>
+</g>
+<g id="Group_2871" transform="translate(-405.5 616.421)">
+	<path id="Path_10293-8" class="st8" d="M519.5,161.3v101.5"/>
+	<g transform="matrix(1, 0, 0, 1, 616.5, -211.75)">
+		<g id="Ellipse_194-20" transform="translate(130 879.19) rotate(180)">
+			<circle class="st9" cx="227" cy="420.7" r="16"/>
+			<circle class="st8" cx="227" cy="420.7" r="15.5"/>
+		</g>
+	</g>
+	<g id="Ellipse_198-8" transform="translate(738.5 658.491) rotate(180)">
+		<circle class="st10" cx="219" cy="412.7" r="8"/>
+		<circle class="st8" cx="219" cy="412.7" r="7.5"/>
+	</g>
+</g>
+<g transform="matrix(1, 0, 0, 1, 873, 81.67)">
+	<g id="Rectangle_1923-2" transform="translate(438 463.33)">
+		<path class="st9" d="M-867-81.7h71c3.3,0,6,2.7,6,6v18c0,3.3-2.7,6-6,6h-71c-3.3,0-6-2.7-6-6v-18C-873-79-870.3-81.7-867-81.7z"/>
+		<path class="st8" d="M-867-81.2h71c3,0,5.5,2.5,5.5,5.5v18c0,3-2.5,5.5-5.5,5.5h-71c-3,0-5.5-2.5-5.5-5.5v-18
+			C-872.5-78.7-870-81.2-867-81.2z"/>
+	</g>
+</g>
+<g>
+	<text transform="matrix(1 0 0 1 454 485.334)" class="st10 st11 st12">2021Y</text>
+	<text transform="matrix(1 0 0 1 454 485.334)" class="st13 st11 st12">2021Y</text>
+</g>
+<text transform="matrix(1 0 0 1 514.5 696.7046)" class="st0 st1 st2">- 월렛 Multi SWAP 기능 개발 </text>
+<g>
+	<text transform="matrix(1 0 0 1 514.5 659.7656)" class="st3 st4 st5">2Q</text>
+</g>
+<path id="Path_10293-9" class="st8" d="M479.5,743.7V631.3"/>
+<g transform="matrix(0, 1, -1, 0, 1686.17, 121.18)">
+	<g id="Ellipse_194-21" transform="translate(463.5 644.3)">
+		<circle class="st9" cx="72.6" cy="562.4" r="16"/>
+		<circle class="st8" cx="72.6" cy="562.4" r="15.5"/>
+	</g>
+</g>
+<g id="Ellipse_198-9" transform="translate(1033.874 592.677) rotate(90)">
+	<circle class="st10" cx="64.6" cy="554.4" r="8"/>
+	<circle class="st8" cx="64.6" cy="554.4" r="7.5"/>
+</g>
+<text transform="matrix(1 0 0 1 514.5 599.9996)" class="st0 st1 st2">- 월렛(Wallet) 3.0v 개발 완료 및 배포 </text>
+<text transform="matrix(1 0 0 1 514.5 621.9996)" class="st0 st15 st2">- </text>
+<text transform="matrix(1 0 0 1 522.6478 621.9996)" class="st0 st1 st2">THE ASTA(모바일 구매 플랫폼) 런칭</text>
+<g id="Group_2904" transform="translate(89.823 2065.799) rotate(-90)">
+	<path id="Path_10293-10" class="st8" d="M1424.6,389.7h64.3"/>
+	<g transform="matrix(0, 1, -1, 0, 1661.13, 121.18)">
+		<g id="Ellipse_194-22" transform="translate(463.5 547.98)">
+			<circle class="st9" cx="-195" cy="-391.7" r="16"/>
+			<circle class="st8" cx="-195" cy="-391.7" r="15.5"/>
+		</g>
+	</g>
+	<g id="Ellipse_198-10" transform="translate(1105.154 592.677) rotate(90)">
+		<circle class="st10" cx="-203" cy="-399.7" r="8"/>
+		<circle class="st8" cx="-203" cy="-399.7" r="7.5"/>
+	</g>
+	<path id="Path_10294-2" class="st8" d="M1520.8,389.7h51.6"/>
+</g>
+<text transform="matrix(1 0 0 1 514.5 777.229)" class="st0 st1 st2">- THE ASTA 제휴사 확대(렌터카,</text>
+<text transform="matrix(1 0 0 1 514.5 794.029)" class="st0 st1 st2">  </text>
+<text transform="matrix(1 0 0 1 520.7 794.029)" class="st0 st1 st2"> </text>
+<text transform="matrix(1 0 0 1 522.7 794.029)" class="st0 st1 st2">항공권) </text>
+<text transform="matrix(1 0 0 1 514.5 815.229)" class="st0 st15 st2">- </text>
+<text transform="matrix(1 0 0 1 522.6478 815.229)" class="st0 st1 st2">THE ASTA 디자인 고도화</text>
+<g>
+	<text transform="matrix(1 0 0 1 514.5 752.2889)" class="st3 st4 st5">3Q</text>
+</g>
+<text transform="matrix(1 0 0 1 514.5 884.709)" class="st0 st1 st2">- 월렛 결제시스템 런칭</text>
+<text transform="matrix(1 0 0 1 514.5 906.709)" class="st0 st15 st2">- </text>
+<text transform="matrix(1 0 0 1 522.6478 906.709)" class="st0 st1 st2">THE ASTA 시스템 고도화</text>
+<text transform="matrix(1 0 0 1 522.6478 923.509)" class="st0 st1 st2">(PMS 시스템 개발)</text>
+<g>
+	<text transform="matrix(1 0 0 1 514.5 853.77)" class="st3 st4 st5">4Q</text>
+</g>
+<g id="Group_2905" transform="translate(-40 518.299)">
+	<path id="Path_10293-11" class="st8" d="M519.5,164.3v51.3"/>
+	<g transform="matrix(1, 0, 0, 1, 251, -113.63)">
+		<g id="Ellipse_194-23" transform="translate(495.5 760.63) rotate(180)">
+			<circle class="st9" cx="227" cy="423.7" r="16"/>
+			<circle class="st8" cx="227" cy="423.7" r="15.5"/>
+		</g>
+	</g>
+	<g id="Ellipse_198-11" transform="translate(738.5 639) rotate(180)">
+		<circle class="st10" cx="219" cy="415.7" r="8"/>
+		<circle class="st8" cx="219" cy="415.7" r="7.5"/>
+	</g>
+</g>
+<g id="Group_2906" transform="translate(-40 599.446)">
+	<path id="Path_10293-12" class="st8" d="M519.5,158.3v101.5"/>
+	<g transform="matrix(1, 0, 0, 1, 251, -194.78)">
+		<g id="Ellipse_194-24" transform="translate(495.5 862.21) rotate(180)">
+			<circle class="st9" cx="227" cy="423.7" r="16"/>
+			<circle class="st8" cx="227" cy="423.7" r="15.5"/>
+		</g>
+	</g>
+	<g id="Ellipse_198-12" transform="translate(738.5 658.491) rotate(180)">
+		<circle class="st10" cx="219" cy="415.7" r="8"/>
+		<circle class="st8" cx="219" cy="415.7" r="7.5"/>
+	</g>
+</g>
+<g>
+	<text transform="matrix(1 0 0 1 514.5 563.015)" class="st3 st4 st5">1Q</text>
+</g>
+</svg>

@@ -1,0 +1,86 @@
+nav{
+    box-shadow:0 2px 4px -1px rgb(0 0 0 / 20%), 0 4px 5px 0 rgb(0 0 0 / 14%), 0 1px 10px 0 rgb(0 0 0 / 12%);
+    position: fixed;
+    z-index:5
+}
+video{
+    filter:brightness(80%);
+    height:90%;
+}
+
+.large-hero{height:80px;}
+.site-hero{position: relative;z-index:4;border-bottom:1px solid #d9d9d9}
+.site-hero__container{position:absolute;top:35%}
+.site-hero__text{text-shadow: 1px 2px 4px rgba(0,0,0,0.3);}
+.top_btn{
+    border-radius:0.5rem;
+    font-weight:bold;
+    font-size:1rem;
+    line-height:1.5rem;
+    background-color:#00a4bb;
+    padding:0.5rem 1rem;
+    color:white;
+}
+.top_btn:hover{
+    opacity:.6;
+}
+.btn_list li{
+    float: left;
+}
+.btn_list li:first-child{
+    margin-right: 1rem;
+}
+.exchange{
+    box-shadow:0 2px 4px -1px rgb(0 0 0 / 20%), 0 4px 5px 0 rgb(0 0 0 / 14%), 0 1px 10px 0 rgb(0 0 0 / 12%);
+    background:white;
+    width:100%;
+    border-bottom:1px solid #d9d9d9
+}
+.bx-wrapper{
+    box-shadow: none !important;
+    margin-bottom:0px !important
+}
+.exc_slide_wrap{
+    width:80%;
+    margin:0 auto;
+    padding:0.5rem 0;
+}
+.exchange .exe_logo{float:left;margin-right:50px}
+.exchange h2 img{vertical-align:middle;height:19px;}
+.exchange .exe_list{font-size:14px;float:right;}
+.exchange dt{float:left;color:#999;}
+.exchange dd{float:left;font-weight:bold;color:#222;margin-left:10px;}
+.swiper-container{margin:0 auto;text-align:center}
+.slide_wrap{background: url('../image/bg_slide_line.gif') top right no-repeat;padding-right:100px;padding-left:100px}
+
+@media (max-width:1024px){
+}
+@media (max-width:768px){
+    .site-hero__container{position:absolute;top:30%;left:20px;font-size:14px;}
+    .about{padding-top:0rem}
+    html,body{overflow-x:hidden;}
+    .section-title .section-content p{font-size:14px}
+    .exc_slide_wrap{
+        width:90%;
+    }
+    video{
+    filter:brightness(70%);
+    height:100%;
+    }
+}   
+@media (max-width:425px){
+    .site-hero__container{position:absolute;top:10%;left:20px;font-size:14px;}
+    .btn--primary{padding:0.75rem 1rem}
+    .btn{font-size:12px;}
+    .top_btn{
+        font-weight: normal;
+        font-size:0.7rem;
+        line-height:1rem;
+    }
+    /*video{
+        width: 100%;  
+    height: 100vh;
+    object-fit: cover;
+    }
+    .site-hero__text{top:50%}*/
+}

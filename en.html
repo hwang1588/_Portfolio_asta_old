@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <!-- Favicons -->
+    <link href="./image/favicon.png" rel="icon">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <title>Astaplatform</title>
+    <script>
+        $(function() {
+            if (isPC()) {
+                $('#theAstaQR').show();
+                $('#astaWalletQR').show();
+            } else {
+                $('#theAstaDown').show();
+                $('#astaWalletDown').show();
+            }
+        });
+
+        function isPC() {
+            var ua = navigator.userAgent.toUpperCase();
+            return !ua.match(/(PHONE|PAD|POD|IPHONE|IPOD|IOS|IPAD|ANDROID|MOBILE|BLACKBERRY|IEMOBILE|MQQBROWSER|JUC|FENNEC|WOSBROWSER|BROWSERNG|WEBOS|SYMBIAN|WINDOWS PHONE)/i);
+        }
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('.m2').click(function () {
+                var offset = $(".about").offset();
+                $('html, body').animate({ scrollTop: offset.top - 100 }, 500);
+            });
+            $('.m3').click(function () {
+                var offset = $(".feature").offset();
+                $('html, body').animate({ scrollTop: offset.top - 400 }, 500);
+            });
+            $('.m4').click(function () {
+                var offset = $(".astatour-bg").offset();
+                $('html, body').animate({ scrollTop: offset.top - 150 }, 500);
+            });
+            $('.m5').click(function () {
+                var offset = $(".history").offset();
+                $('html, body').animate({ scrollTop: offset.top - 70 }, 500);
+            });
+            $('.m6').click(function () {
+                var offset = $(".team").offset();
+                $('html, body').animate({ scrollTop: offset.top - 70 }, 500);
+            })
+            if (matchMedia('screen and (min-width: 768px)').matches) {
+                $('.nav-content li').click(function () {
+                    $('.nav-content').toggleClass("hidden");
+                });
+            }
+        })
+    </script>
+</head>
+<style>
+    * {
+        font-family: 'Noto Sans KR', sans-serif;
+        word-break: keep-all;
+        white-space: normal;
+        /* text-indent: 1rem; */
+    }
+</style>
+
+<body>
+    <!-- Header section -->
+    <header class="large-hero">
+        <div class="">
+            <nav class="flex w-full bg-white top-0 p-5 lg\:focus\:z-10">
+                <div class="w-full lg:w-10/12 lg:mx-auto xl:w-9/12 2xl:w-8/12">
+                    <div class="flex flex-wrap justify-between">
+                        <div class="flex justify-between flex-shrink-0 flex-1">
+                            <div class="cursor-pointer">
+                                <a href="#"><img class="h-9" src="./image/astalogo/asta_logo_en.svg" alt="Astaplatform logo" /></a>
+                            </div>
+
+                            <div class="block lg:hidden">
+                                <button id="nav-toggle" class="text-blue-800">
+                                    <svg
+                                    class="fill-current h-8 w-8"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    class="feather feather-menu"
+                                    >
+                                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <!-- Menu items -->
+                        <div id="nav-content" class="nav-content hidden w-full pt-6 lg:flex lg:items-center lg:w-auto lg:pt-0">
+                            <ul class="lg:flex flex-1">
+                                <li>
+                                    <a href="#">Home</a>
+                                </li>
+                                <li class="m2">
+                                    <a href="#about">About ASTA</a>
+                                </li>
+                                <li class="m3">
+                                    <a href="#feature">Our Features</a>
+                                </li>
+                                <li class="m4">
+                                    <a href="#astatour">The ASTA</a>
+                                </li>
+                                <li class="m5">
+                                    <a href="#history">History</a>
+                                </li>
+                                <li class="m6">
+                                    <a href="#team">Team</a>
+                                </li>
+                                <li>
+                                    <div class="dropdown inline-block relative text-sm">
+                                        <div class="flex bg-gray-100 px-2 py-1 rounded">
+                                            <i class="my-auto fas fa-globe text-green-500"></i>
+                                            <p class="pl-2 font-light">EN</p>
+
+                                        </div>
+                                        <div class="absolute hidden dropdown-menu text-blue-700 pt-1 pl-0.5">
+                                            <a class="block px-4 py-1 text-center rounded-t bg-gray-200 hover:bg-gray-300" href="./cn.html">CN</a>
+                                            <a class="block px-4 py-1 text-center rounded-b bg-gray-200 hover:bg-gray-300" href="./index.html">KR</a>
+
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <div>
+        <!-- Hero image -->
+        <div class="site-hero">
+            <div class="hero-image">
+                <div class="t_video">
+                    <video muted autoplay loop width="100%">
+                        <source src="video/asta_ex2.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="w-full lg:w-10/12 lg:mx-auto xl:w-9/12 2xl:w-8/12">
+                    <div class="site-hero__container" data-aos="zoom-in" data-aos-duration="1000">
+                        <div class="site-hero__text text-white mb-6">
+                            <h1 class="text-xl font-extrabold py-2 md:text-3xl xl:text-5xl xl:leading-tight 2xl:text-7xl">
+                                Digital Asset ASTA,<br />Innovation of the Future
+                            </h1>
+                        </div>
+                        <ul class="btn_list">
+                            <li>
+                                <a href="./ASTA_white_en_2021-12-14.pdf" class="top_btn" target="_blank">White paper</a>
+                            </li>
+                            <li>
+                                <a href="./ASTA_Business_Paper_en.pdf" class="top_btn" target="_blank">Business paper</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About Asta section -->
+    <section id="about" class="about bg-gray-100">
+        <div class="wrapper">
+            <div class="container">
+                <div class="section-title">
+                    <span>About</span>
+                    <div class="section-content">
+                        <p>
+                            ASTA platform is composed of multifunctional ecosystem for everyone and the expansion of ASTA platform is not limited to regions nor industries. ASTA platform is designed to be beneficial to both platform and network participants and would be open to
+                            everyone who would like to join. ASTA will become a platform partnered and connected with companies in various fields such as shopping, accommodation and healthcare, etc. The ecosystem of ASTA links with a variety of marketing
+                            platforms and would develop a more convenient business model with higher applicability to increase the number of platform users.
+                        </p>
+                    </div>
+                </div>
+                <div class="about-image image-wrapper container pt-8" data-aos="fade-right" data-aos-duration="2000">
+                    <picture>
+                        <source srcset="./image/picture/Astaplatform-desktop-1160w-en.svg" media="(min-width: 1280px)" />
+                        <source srcset="./image/picture/Astaplatform-tablet-768w-en.svg" media="(min-width: 768px)" />
+                        <img class="justify-self-stretch" src="./image/picture/Astaplatform-mobile-414w-en.svg" alt="" />
+                    </picture>
+                    <div class="mt-8">
+                        <img class="w-96" src="./image/logo_kr_en.svg" alt="" />
+                    </div>
+                </div>
+                <div class="section-title">
+                    <div class="section-content">
+                        <p class="">
+                            The symbol of shield of ASTA logo represents the trustworthiness of ASTA and the will to create a safe and secure platform with our prosects and value. The color of mint blue and navy blue represents the reliability, creativity and innovation of ASTA
+                            platform.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Technology -->
+    <section id="technology" class="technology" style="background-image: url('./image/feature_bg_small')">
+        <div class="wrapper">
+            <div class="container">
+                <div class="section-title section-title__white pb-8">
+                    <span class="tech-title">The Application technoloy</span>
+                    <!-- <p class="section-text py-4">Lorem ipsum dolor sit.</p> -->
+                </div>
+                <div class="tech__items">
+                    <div class="tech__item group" data-aos="fade-right" data-aos-duration="1100">
+                        <div class="img-wrapper">
+                            <img class="" src="./image/icons/1.svg" alt="" />
+                        </div>
+                        <span class="item-title group-hover:text-gray-50">Multi Block-Chain</span>
+                        <p class="item-text group-hover:text-gray-50">
+                            Deploy Multichain instead of single blockchain for multiple connection for specific
+                        </p>
+                    </div>
+                    <div class="tech__item group" data-aos="zoom-in" data-aos-duration="1000">
+                        <div class="img-wrapper">
+                            <img class="" src="./image/icons/2.svg" alt="" />
+                        </div>
+                        <span class="item-title group-hover:text-gray-50">Hyper Converged Infrastructure</span>
+                        <p class="item-text group-hover:text-gray-50">
+                            An integrated technology combining cloud services with virtualized infrastructures
+                        </p>
+                    </div>
+                    <div class="tech__item group" data-aos="fade-left" data-aos-duration="1100">
+                        <div class="img-wrapper">
+                            <img class="" src="./image/icons/3.svg" alt="" />
+                        </div>
+                        <span class="item-title group-hover:text-gray-50">Front Grid Backend Multi Flexing</span>
+                        <p class="item-text group-hover:text-gray-50">
+                            Ensure stability, accurate processing and security enhancement of the platform
+                        </p>
+                    </div>
+                    <div class="tech__item group" data-aos="zoom-in-right" data-aos-duration="1100">
+                        <div class="img-wrapper">
+                            <img class="" src="./image/icons/4.svg" alt="" />
+                        </div>
+                        <span class="item-title group-hover:text-gray-50">Atomic Exchange</span>
+                        <p class="item-text group-hover:text-gray-50">
+                            Multi blockchain allows transaction executed through exchanges within the blockchain
+                        </p>
+                    </div>
+                    <div class="tech__item group" data-aos="zoom-in" data-aos-duration="1000">
+                        <div class="img-wrapper">
+                            <img class="" src="./image/icons/5.svg" alt="" />
+                        </div>
+                        <span class="item-title group-hover:text-gray-50">Multi Swap</span>
+                        <p class="item-text group-hover:text-gray-50">
+                            An inter-chain technology able to exchange data with other blockchain networks
+                        </p>
+                    </div>
+                    <div class="tech__item group" data-aos="zoom-in-left" data-aos-duration="1100">
+                        <div class="img-wrapper">
+                            <img class="" src="./image/icons/6.svg" alt="" />
+                        </div>
+                        <span class="item-title group-hover:text-gray-50">Half-Private Block-Chain</span>
+                        <p class="item-text group-hover:text-gray-50">
+                            For personal asset protection, system operation, transaction speed and system advancement
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Structure -->
+    <section class="structure">
+        <div class="wrapper">
+            <div class="container">
+                <div class="section-title">
+                    <span>Structure of asta platform</span>
+                    <div class="section-content">
+                        <p class="">
+                            Through the payment system, ASTA aims to lower the transaction fee paying to credit card companies and payment gateway providers, to eliminate the inconvenience caused due to the exchange rate while to ensure the market competitiveness of the business
+                            partners. The goal of ASTA platform is to establish an ecosystem and to issue a virtual asset can be used by all franchise stores all over the world enhances the efficiency for providing more benefits to the users. ASTA is
+                            designed on the foundation of the world’s major currency, stable coins and by using the multi-swap technology, ASTA can be exchanged mutually with the major cryptocurrency such as BTC and ETH
+                        </p>
+                    </div>
+                </div>
+                <div class="image-wrapper" data-aos="fade-up" data-aos-duration="1500">
+                    <picture class="">
+                        <source srcset="./image/picture/astaplatform_structure_large-en.svg" media="(min-width: 1280px)" />
+                        <source srcset="./image/picture/astaplatform_structure_large-en.svg" media="(min-width: 1024px)" />
+                        <source srcset="./image/picture/astaplatform_structure_large-en.svg" media="(min-width: 768px)" />
+                        <img class="" src="./image/picture/astaplatform_structure_small-en.svg" alt="" />
+                    </picture>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Features -->
+    <section id="feature">
+        <div class="wrapper">
+            <div class="container">
+                <div class="section-title">
+                    <span>Our Features</span>
+                    <div class="section-content">
+                        <p class="">
+                            The final goal of the ASTA platform is to implement an ASTA-oriented ecosystem and an international payment system that can be easily used anytime and anywhere without causing inconvenience to people. We are planning to become a global payment method
+                            with no geographic limitation and with no exchange rate to maximize the profit for all network participants including our users and business partners.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="feature">
+        <div class="wrapper">
+            <div class="container">
+                <div class="image-wrapper" data-aos="flip-left" data-aos-duration="1500">
+                    <picture>
+                        <source srcset="./image/feature-large-en.svg" media="(min-width: 1280px)" />
+                        <source srcset="./image/feature-medium-en.svg" media="(min-width: 768px)" />
+                        <source srcset="./image/feature-medium.svg" media="(min-width: 640px)" />
+                        <img src="./image/feature-small-en.svg" alt="">
+                    </picture>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- The ASTA -->
+    <section id="astatour" class="astatour-bg bg-gray-50 py-0">
+        <div class="w-full overflow-hidden relative">
+            <picture>
+                <source srcset="./image/astatour-bg.svg" media="(min-width: 1280px)" />
+                <source srcset="./image/astatour-bg-small.svg" media="(min-width: 640px)" />
+                <img class="absolute inset-0 w-full h-full object-cover" src="./image/astatour-bg-mobile.svg" alt="">
+            </picture>
+            <div class="absolute inset-0 bg-opacity-50"></div>
+            <div class="the-asta flex h-full items-center justify-center relative">
+                <div class="wrapper">
+                    <div class="container">
+                        <div class="ta-container">
+                            <div class="hidden absolute inset-0 xl:block" data-aos="flip-left" data-aos-duration="2000">
+                                <img class="mx-auto h-3/5 mt-44 2xl:h-2/3" src="./image/app-img-en.png" alt="">
+                            </div>
+                            <div class="ta-text-content" data-aos="fade-down-right" data-aos-duration="1500">
+                                <div class="mt-4 py-2 text-blue-800 sm:my-auto xl:mt-16 xl:flex-1 2xl:mt-12">
+                                    <p class="text-3xl font-bold text-center sm:text-left lg:text-4xl xl:text-5xl 2xl:text-6xl">THE ASTA</p>
+                                    <p class="mt-1.5 text-sm font-bold text-center sm:text-left lg:text-xl xl:mt-3 2xl:text-2xl 2xl:mt-4">The beginning of ASTA ecosystem</p>
+                                    <img class="w-48 mx-auto mt-2.5 sm:hidden" src="./image/theasta-en.png" alt="">
+                                    <p class="mt-2.5 text-xs font-light lg:text-base xl:mt-4 xl:text-sm 2xl:mt-5">Enjoy exclusive offers from F&B to travel on</p>
+                                    <p class="text-xs font-bold lg:text-base xl:text-sm">THE ASTA, a blockchain-based payment platform</p>
+                                    <p class="mt-2.5 text-xs font-light lg:text-base xl:mt-4 xl:text-sm 2xl:mt-5">Start using cryptocurrency in your daily life</p>
+                                    <p class="mt-2.5 text-xs font-light lg:text-base xl:mt-4 xl:text-sm 2xl:mt-5">Get <span class="font-bold">up to 90% off</span> hotel & resort deals &</p>
+                                    <p class="text-xs font-light lg:text-base xl:text-sm"><span class="font-bold">Up to 23% discount</span> on mobile vouchers</p>
+                                    <div class="flex justify-end mt-5 mb-10 sm:mb-4 sm:justify-start lg:mt-6 xl:mt-8 2xl:mt-10">
+                                        <a href="https://astatour.net/?lang=en" target="_blank" class="h-8 px-1 py-2 text-xs text-gray-50 bg-blue-800 hover:bg-blue-700 rounded lg:h-9 lg:text-sm lg:px-2 xl:px-1 2xl:h-12 2xl:text-base 2xl:px-2 2xl:py-3">Go to THE ASTA<i class="ml-2 fas fa-angle-right"></i></a>
+                                        <a id="theAstaDown" href="./download/the_asta/en/index.html" target="_blank" class="hidden h-8 ml-4 px-2 py-2 text-xs text-gray-50 bg-blue-800 hover:bg-blue-700 rounded lg:h-9 lg:text-sm lg:px-4 xl:ml-2 xl:px-2 2xl:text-base 2xl:h-12 2xl:ml-6 2xl:px-6 2xl:py-3">Download App<i class="ml-1 fas fa-angle-right"></i></a>
+                                        <div id="theAstaQR" class="hidden ml-4 xl:ml-2 2xl:ml-6">
+                                            <img class="h-20 w-20 mx-auto border border-gray-400 object-contain 2xl:h-28 2xl:w-28" src="./image/qr_the_asta_en.svg" alt="">
+                                            <p class="text-xs text-center text-blue-800">Download App</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="hidden ml-10 mt-12 mb-16 sm:block md:ml-20 lg:ml-32 xl:hidden">
+                                    <img class="h-80 lg:h-96" src="./image/theasta-en.png" alt="">
+                                </div>
+                            </div>
+                            <div class="ta-text-content" data-aos="fade-up-left" data-aos-duration="1500">
+                                <div class="hidden mr-2 mt-16 mb-12 sm:block md:mr-10 lg:mr-24 xl:hidden">
+                                    <img class="h-80 lg:h-96" src="./image/astawallet.png" alt="">
+                                </div>
+                                <div class="mt-8 py-2 text-blue-800 sm:my-auto xl:mb-16 xl:flex-1 2xl:mb-12">
+                                    <p class="text-3xl font-bold text-center sm:text-right lg:text-4xl xl:text-5xl 2xl:text-6xl">ASTA WALLET</p>
+                                    <p class="mt-1.5 text-sm font-bold text-center sm:text-right lg:text-xl xl:mt-3 2xl:text-2xl 2xl:mt-4">Manage your cryptocurrency with ease</p>
+                                    <img class="w-48 mx-auto mt-2.5 sm:hidden" src="./image/astawallet.png" alt="">
+                                    <p class="mt-2.5 text-xs font-light sm:text-right lg:text-base xl:mt-4 xl:text-sm 2xl:mt-5">Send & receive your cryptocurrency <span class="font-bold">in just a few taps</span></p>
+                                    <p class="text-xs font-light sm:text-right lg:text-base xl:text-sm">Monitor market movement on THE ASTA</p>
+                                    <p class="mt-2.5 text-xs font-bold sm:text-right lg:text-base xl:mt-4 xl:text-sm 2xl:mt-5">Special offers and promotions exclusively on ASTA WALLET</p>
+                                    <p class="text-xs font-bold sm:text-right lg:text-base xl:text-sm">Analysis of trend and investment opportunities by global professionals</p>
+                                    <div class="flex mt-5 mb-8 text-right justify-end sm:mb-4 lg:mt-6 xl:mt-8 2xl:mt-10">
+                                        <a id="astaWalletDown" href="./download/asta_wallet/en/index.html" target="_blank" class="hidden h-8 px-2 py-2 text-xs text-gray-50 bg-blue-800 hover:bg-blue-700 rounded lg:h-9 lg:text-sm lg:px-4 2xl:h-12 2xl:text-base 2xl:ml-6 2xl:px-6 2xl:py-3">Download App<i class="ml-1 fas fa-angle-right"></i></a>
+                                        <div id="astaWalletQR" class="hidden ml-4 xl:ml-2 2xl:ml-6">
+                                            <img class="h-20 w-20 mx-auto border border-gray-400 object-contain 2xl:h-28 2xl:w-28" src="./image/qr_asta_wallet_en.svg" alt="">
+                                            <p class="text-xs text-center text-blue-800">Download App</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- History -->
+    <section id="history" class="history">
+        <div class="wrapper">
+            <div class="container">
+                <div class="section-title">
+                    <span>History</span>
+                    <p class="section-subtitle">
+                        Technical & Business history
+                    </p>
+                </div>
+                <div class="image-wrapper pt-8" data-aos="flip-up"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="2000">
+                    <picture>
+                        <source srcset="./image/history-large-en.png" media="(min-width: 1280px)" />
+                        <source srcset="./image/history-medium-en.png" media="(min-width: 768px)" />
+                        <source srcset="./image/history-medium-en.png" media="(min-width: 640px)" />
+                        <img src="./image/history-mobile-en.png" alt="">
+                    </picture>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Members -->
+    <section id="team" class="team bg-gray-100">
+        <div class="wrapper">
+            <div class="container">
+                <div class="section-title">
+                    <span>Team</span>
+                    <p class="section-subtitle">
+                        We provide the solution for asset management
+                    </p>
+                </div>
+                <!-- team members -->
+                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-4 xl:grid-cols-4 2xl:grid-cols-6 gap-4">
+                    <!--
+                    <div class="item border border-gray-300 bg-white hover:shadow-lg" data-aos="fade-down" data-aos-duration="1000">
+                        <div class="our-team">
+                            <div class="member-image">
+                                <img class="w-full" src="./image/team/Ukseonhu.png" alt="" />
+                            </div>
+                            <div class="middle">
+                                <div class="linked text-blue-700">
+                                    <a href="https://www.linkedin.com/in/%EC%88%9C%ED%98%B8-%EC%98%A5-90124090/" class="icon"
+                                        target="_blank" title="User Profile">
+                                        <i class="fab fa-linkedin"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="our-team__member-content">
+                                <p class="our-team__member-name">Ock Soon Ho</p>
+                                <p class="our-team__member-position">Project Managing Director</p>
+                            </div>
+                        </div>
+                    </div>
+                    -->
+                    <div class="item border border-gray-300 bg-white hover:shadow-lg" data-aos="fade-down" data-aos-duration="1000">
+                        <div class="our-team">
+                            <div class="member-image">
+                                <img class="w-full" src="./image/team/kimsonggeoyn.png" alt="" />
+                            </div>
+                            <div class="middle">
+                                <div class="linked text-blue-700">
+                                    <a href="https://www.linkedin.com/in/%EC%84%B1%EA%B7%A0-%EA%B9%80-8910656a/" class="icon"
+                                        target="_blank" title="User Profile">
+                                        <i class="fab fa-linkedin"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="our-team__member-content">
+                                <p class="our-team__member-name">Kim Sung Gyun</p>
+                                <p class="our-team__member-position">Technical Development Director</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item border border-gray-300 bg-white hover:shadow-lg" data-aos="fade-down" data-aos-duration="1000">
+                        <div class="our-team">
+                            <div class="member-image">
+                                <img class="w-full" src="./image/team/Oheoseong.png" alt="" />
+                            </div>
+                            <div class="middle">
+                                <div class="linked text-blue-700">
+                                    <a href="https://www.linkedin.com/in/hyo-sang-you-6569601b6/" class="icon" target="_blank"
+                                        title="User Profile">
+                                        <i class="fab fa-linkedin"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="our-team__member-content">
+                                <p class="our-team__member-name">Yoo Hyo Sang</p>
+                                <p class="our-team__member-position">
+                                    Back-End / Data Architect / Big Data
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item border border-gray-300 bg-white hover:shadow-lg" data-aos="fade-down" data-aos-duration="1000">
+                        <div class="our-team">
+                            <div class="member-image">
+                                <img class="w-full" src="./image/team/wonseok.png" alt="" />
+                            </div>
+                            <div class="middle">
+                                <div class="linked text-blue-700">
+                                    <a href="https://www.linkedin.com/in/wonseok-lee-310b9a1b5/" class="icon" target="_blank"
+                                        title="User Profile">
+                                        <i class="fab fa-linkedin"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="our-team__member-content">
+                                <p class="our-team__member-name">Lee Won Seok</p>
+                                <p class="our-team__member-position">
+                                    Android Application
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item border border-gray-300 bg-white hover:shadow-lg" data-aos="fade-down" data-aos-duration="1000">
+                        <div class="our-team">
+                            <div class="member-image">
+                                <img class="w-full" src="./image/team/packheewon.png" alt="" />
+                            </div>
+                            <div class="middle">
+                                <div class="linked text-blue-700">
+                                    <a href="https://www.linkedin.com/in/heewon-park-266348126" class="icon" target="_blank"
+                                        title="User Profile">
+                                        <i class="fab fa-linkedin"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="our-team__member-content">
+                                <p class="our-team__member-name">Park Hee Won</p>
+                                <p class="our-team__member-position">iOS Application</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--
+                    <div class="item border border-gray-300 bg-white hover:shadow-lg" data-aos="fade-down" data-aos-duration="1000">
+                        <div class="our-team">
+                            <div class="member-image">
+                                <img class="w-full" src="./image/team/leetaguan.png" alt="" />
+                            </div>
+                            <div class="middle">
+                                <div class="linked text-blue-700">
+                                    <a href="https://www.linkedin.com/in/taekwang-lee-444b981b5" class="icon" target="_blank"
+                                        title="User Profile">
+                                        <i class="fab fa-linkedin"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="our-team__member-content">
+                                <p class="our-team__member-name">Lee Tae Kwang</p>
+                                <p class="our-team__member-position">
+                                    Front-End / Payment and Wallet Service
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    -->
+                    <div class="item border border-gray-300 bg-white hover:shadow-lg" data-aos="fade-down" data-aos-duration="1000">
+                        <div class="our-team">
+                            <div class="member-image">
+                                <img class="w-full" src="./image/team/kimdoyoon.png" alt="" />
+                            </div>
+                            <div class="middle">
+                                <div class="linked text-blue-700">
+                                    <a href="https://www.linkedin.com/in/do-yoon-kim-8a4085203/" class="icon" target="_blank" title="User Profile">
+                                        <i class="fab fa-linkedin"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="our-team__member-content">
+                                <p class="our-team__member-name">Kim Do Yoon</p>
+                                <p class="our-team__member-position">
+                                    Blockchain
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item border border-gray-300 bg-white hover:shadow-lg" data-aos="fade-down" data-aos-duration="1000">
+                        <div class="our-team">
+                            <div class="member-image">
+                                <img class="w-full" src="./image/team/seonjee.png" alt="" />
+                            </div>
+                            <div class="middle">
+                                <div class="linked text-blue-700">
+                                    <a href="https://www.linkedin.com/in/sungjae-jin-89411b154/" class="icon" target="_blank"
+                                        title="User Profile">
+                                        <i class="fab fa-linkedin"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="our-team__member-content">
+                                <p class="our-team__member-name">Jin Sung Jae</p>
+                                <p class="our-team__member-position">Blockchain / Wallet</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--
+                    <div class="item border border-gray-300 bg-white hover:shadow-lg" data-aos="fade-down" data-aos-duration="1000">
+                        <div class="our-team">
+                            <div class="member-image">
+                                <img class="w-full" src="./image/team/KimYeunKook.png" alt="" />
+                            </div>
+                            <div class="middle">
+                                <div class="linked text-blue-700">
+                                    <a href="https://www.linkedin.com/in/%EC%97%B0%EA%B5%AD-%EA%B9%80-9914a397/" class="icon" target="_blank" title="User Profile">
+                                        <i class="fab fa-linkedin"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="our-team__member-content">
+                                <p class="our-team__member-name">
+                                    Kim Yeun Kook
+                                </p>
+                                <p class="our-team__member-position">
+                                    Back-End 
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    -->
+                    <!--
+                    <div class="item border border-gray-300 bg-white hover:shadow-lg" data-aos="fade-down" data-aos-duration="1000">
+                        <div class="our-team">
+                            <div class="member-image">
+                                <img class="w-full" src="./image/team/kongyujun.png" alt="" />
+                            </div>
+                            <div class="middle">
+                                <div class="linked text-blue-700">
+                                    <a href="https://www.linkedin.com/in/yujun-kong-42a158215/" class="icon" target="_blank" title="User Profile">
+                                        <i class="fab fa-linkedin"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="our-team__member-content">
+                                <p class="our-team__member-name">
+                                    Kong Yu Jun
+                                </p>
+                                <p class="our-team__member-position">
+                                    Back-End 
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    -->
+                    <!--
+                    <div class="item border border-gray-300 bg-white hover:shadow-lg" data-aos="fade-down" data-aos-duration="1000">
+                        <div class="our-team">
+                            <div class="member-image">
+                                <img class="w-full" src="./image/team/Jeongjiyong.png" alt="" />
+                            </div>
+                            <div class="middle">
+                                <div class="linked text-blue-700">
+                                    <a href="http://linkedin.com/in/jiyong-jeong-a6ab971b5" class="icon" target="_blank"
+                                        title="User Profile">
+                                        <i class="fab fa-linkedin"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="our-team__member-content">
+                                <p class="our-team__member-name">Jeong Ji Yong</p>
+                                <p class="our-team__member-position">
+                                    System Engineer
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    -->
+                    <!--
+                    <div class="item border border-gray-300 bg-white hover:shadow-lg" data-aos="fade-down" data-aos-duration="1000">
+                        <div class="our-team">
+                            <div class="member-image">
+                                <img class="w-full" src="./image/team/wonjun.png" alt="" />
+                            </div>
+                            <div class="middle">
+                                <div class="linked text-blue-700">
+                                    <a href="https://www.linkedin.com/in/wonjun-choi-330160215" class="icon" target="_blank" title="User Profile">
+                                        <i class="fab fa-linkedin"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="our-team__member-content">
+                                <p class="our-team__member-name">
+                                    Choi Won Jun
+                                </p>
+                                <p class="our-team__member-position">
+                                    Publishing
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    -->
+                </div>
+            </div>
+        </div>
+    </section> 
+
+    <!-- Partners 
+    <section id="partner" class="partner">
+        <div class="wrapper">
+            <div class="container">
+                <div class="section-title">
+                    <span>Crypto Exchange partners</span>
+                </div>
+                <div class="partners-box flex flex-col pt-6 md:flex-row md:justify-center md:pt-10">
+                    <div class="partner-item image-wrapper p-2">
+                        <a href="https://coinone.co.kr/" target="_blank">
+                            <img src="./image/picture/coinone.svg" alt="" />
+                        </a>
+                    </div>
+                    <div class="partner-item image-wrapper p-2">
+                        <a href="https://www.cashierest.com/" target="_blank">
+                            <img src="./image/picture/cashierest.svg" alt="" />
+                        </a>
+                    </div>
+                    <div class="partner-item image-wrapper p-2">
+                        <a href="https://www.biki.com/en_US/" target="_blank">
+                            <img src="./image/picture/biki.svg" alt="" />
+                        </a>
+                    </div>
+                    <div class="partner-item image-wrapper p-2">
+                        <a href="https://en.bithumb.com/" target="_blank">
+                            <img src="./image/picture/bithumb.svg" alt="" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>-->
+    <section class="partner">
+        <div class="wrapper">
+            <div class="contaniner">
+                <div class="section-title">
+                    <span>Partners</span>
+                </div>
+                <div class="image-wrapper">
+                    <div data-aos="fade-up" data-aos-duration="1000"><img src="image/partners01.png" alt="" /></div>
+                    <div data-aos="fade-up" data-aos-duration="1000"><img src="image/partners02n.png" alt="" /></div>
+                    <div data-aos="fade-up" data-aos-duration="1000"><img src="image/partners03.png" alt="" /></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="partner">
+        <div class="wrapper">
+            <div class="contaniner">
+                <div class="section-title">
+                    <span style="text-transform:none">THE ASTA Available Brands</span>
+                </div>
+                <div class="image-wrapper">
+                    <div data-aos="fade-up" data-aos-duration="1000"><img src="image/partners04.png" alt="" /></div>
+                    <div data-aos="fade-up" data-aos-duration="1000"><img src="image/partners05.png" alt="" /></div>
+                    <div data-aos="fade-up" data-aos-duration="1000"><img src="image/partners06.png" alt="" /></div>
+                    <div data-aos="fade-up" data-aos-duration="1000"><img src="image/partners07.png" alt="" /></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer section -->
+    <footer class="footer bg-gray-900">
+        <div class="wrapper">
+            <div class="container">
+                <div class="flex flex-col text-center lg:text-left lg:flex lg:flex-row">
+                    <div class="item-1 lg:w-2/3 text-gray-500 py-5">
+                        <span>Contact us:</span><a class="text-green-600" href="#"> info@astaplatform.com</a>
+                        </p>
+                        <p class="uppercase py-3">
+                            © 2019.<strong>Asta Platform. </strong>
+                        </p>
+                    </div>
+                    <div class="item-2 py-5 flex-col lg:flex-row">
+                        <div class="flex text-gray-300 justify-center">
+                            <div class="icon-box bg-gray-700 hover:bg-red-700">
+                                <a href="https://weibo.com/p/1005057532198157" target="_blank">
+                                    <i class="fab fa-weibo"></i>
+                                </a>
+                            </div>
+                            <div class="icon-box bg-gray-600 hover:bg-green-500">
+                                <a href="https://medium.com/astaplatform" target="_blank">
+                                    <i class="fab fa-medium"></i>
+                                </a>
+                            </div>
+                            <div class="icon-box bg-gray-500 hover:bg-blue-500">
+                                <a href="https://www.facebook.com/AstaGlobal" target="_blank">
+                                    <i class="fab fa-facebook "></i>
+                                </a>
+                            </div>
+                            <div class="icon-box bg-gray-700 hover:bg-blue-300">
+                                <a href="https://twitter.com/Astaplatform" target="_blank">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </div>
+                            <div class="icon-box bg-gray-800 hover:bg-blue-400">
+                                <a href="https://t.me/official_ASTA" target="_blank">
+                                    <i class="fab fa-telegram"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- <div class="item-3 flex justify-center">
+                <div class="icon-box">
+                  <img src="./image/coingecko.webp" alt="">
+                </div>
+                <div class="icon-box">
+                  <img src="./image/kakaotalk.svg" alt="">
+                </div>
+                <div class="icon-box">
+                  <img src="./image/coinmarketcap.svg" alt="">
+                </div>
+              </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <div
+        class="bottom-bar py-4 text-xs text-center text-gray-500 bg-gray-800"
+      >
+        <p>© 2019.<strong>Asta Platform. </strong> All Right Reserved.</p>
+      </div> -->
+    </footer>
+</body>
+
+</html>
+<script>
+    AOS.init();
+</script>
+<script>
+    document.getElementById("nav-toggle").onclick = function() {
+        document.getElementById("nav-content").classList.toggle("hidden");
+    };
+</script>
