@@ -1,4 +1,4 @@
-# ASTA_OLD_TYPE
+# Website_Asta(old ver.)
 
 ## Stack
 
