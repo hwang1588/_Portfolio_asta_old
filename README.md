@@ -2,14 +2,11 @@
 
 ## Stack
 
--   [Vue 3.0](https://v3.vuejs.org/)
--   [Vuex 4.0](https://vuex.vuejs.org)
--   [Router](https://router.vuejs.org/)
--   [Tailwind CSS 3](https://tailwindcss.com/)
--   [Vite 2.0](https://vitejs.dev/)
--   [Primevue 3.0](https://primefaces.org/primevue/#/)
--   eslint
--   prettier
+-   [HTML5.2](https://html.spec.whatwg.org/)
+-   [CSS3.0](https://www.w3.org/TR/CSS/)
+-   [Jquery3.2.1](https://jquery.com/)
+-   [Aos2.3.1](https://michalsnik.github.io/aos/)
+-   [Bxslider4.2.12](https://bxslider.com/)
 
 
 ## Preview
